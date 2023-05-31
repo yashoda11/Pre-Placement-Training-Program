@@ -23,6 +23,10 @@ var threeSumClosest = function (nums, target) {
             }
         }
     }
-    return closest;
+    return `
+    The Sum that is closest to the target ${target} is : ${closest}
+    `;
 };
-K
+var nums = [-1, 2, 1, -4];
+var target = 1;
+console.log(threeSumClosest(nums, target));
