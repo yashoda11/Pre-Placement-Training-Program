@@ -1,3 +1,4 @@
+# **Assignemnt - 01**
 # Question - 01
 
 **Q1.** Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
@@ -12,4 +13,8 @@ You can return the answer in any order.
 
 **Output:** [0,1]
 
-**Explanation:** Because nums[0] + nums[1] == 9, we return [0, 1][
+**Explanation:** 
+- Because nums[0] + nums[1] == 9, we return [0, 1].
+- Loop through each element in nums and then loop through each element again to find if there is a value that equals target - nums[i] .
+- Time Complexity - O(n*n)
+- Space Complexity - O(1) 

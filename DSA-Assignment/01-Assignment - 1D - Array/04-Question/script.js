@@ -8,7 +8,8 @@ var plusOne = function (digits) {
     }
     return [1, ...digits];
 };
+var digits = [1, 2, 3];
 console.log(`
-After Incrementing the Array [1,2,3], 
-The Output is : [${plusOne([1,2,3])}]`
-);
+    After Incrementing the given array [${digits}] by one , 
+    The Output is : [${plusOne(digits)}]
+`);

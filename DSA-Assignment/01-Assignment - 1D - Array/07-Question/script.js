@@ -12,6 +12,9 @@ function moveAllZeorsToAtEnd(nums)
 	{
 		nums.push(0);
 	}
-	return `OUTPUT : \nThe given array after shifting all zeros to right side is: ${nums}`
+	return `
+	OUTPUT : \nThe given array after shifting all zeros to right side is: [${nums}]
+	`;
 }
-console.log(moveAllZeorsToAtEnd([0,1,0,3,12]));
+var nums = [0,1,0,3,12];
+console.log(moveAllZeorsToAtEnd(nums));

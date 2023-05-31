@@ -9,4 +9,5 @@ for ( i = 0 ; i < nums.length ; i++ ){
     }
 }
 }
-console.log(displayTwiceOccuredNoANDMissingNumber([1,2,2,4]));
+var nums = [1,2,2,4];
+console.log(displayTwiceOccuredNoANDMissingNumber(nums));

@@ -7,5 +7,6 @@ var twoSum = function(nums, target) {
         }
     }
 };
-console.log(`The Output of the Indices are :[ ${twoSum([2, 7, 11, 15],9)}]`);
-console.log(`The Output of the Indices are :[ ${twoSum([3, 2, 4],6)}]`);
+var nums = [2,7,11,15];
+var target = 9;
+console.log(`The Output of the Indices are : [${twoSum(nums, target)}]`);
