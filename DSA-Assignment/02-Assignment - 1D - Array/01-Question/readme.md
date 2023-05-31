@@ -15,8 +15,9 @@ Output: 4
     - 2. (1, 3), (2, 4) -> min(1, 3) + min(2, 4) = 1 + 2 = 3
     - 3. (1, 2), (3, 4) -> min(1, 2) + min(3, 4) = 1 + 3 = 4
 - So the maximum possible sum is 4
-- Time Complexity: O(NlogN), N is length of the input array.
-- Space Complexity: O(1)
+- **Time Complexity :** O(NlogN),
+    - N is length of the input array.
+- **Space Complexity :** O(1)
 - First we have to first sort the array, and then take the sum of every number with an even index (i.e. the smallest number in each pair).
 
 
