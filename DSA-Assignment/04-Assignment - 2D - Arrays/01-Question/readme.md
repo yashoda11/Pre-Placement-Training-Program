@@ -19,8 +19,8 @@ Output: [1,5]
         - If any of the values arr1[p1], arr2[p2], or arr3[p3] is less than the other two, increment the pointe for  that array by 1.
     - Convert the commonElements set to an array and sort it in ascending order.
     - Return the sorted array containing the common integers.
-    - In the example, we use the given input arrays arr1 = [1, 2, 3, 4, 5], arr2 = [1, 2, 5, 7, 9], and arr3 = [1, 3, 4, 5, 8] to demonstrate how the commonElements function works. 
-    - The output will be [1, 5] since these are the integers that appear in all three arrays.
+- In the example, we use the given input arrays arr1 = [1, 2, 3, 4, 5], arr2 = [1, 2, 5, 7, 9], and arr3 = [1, 3, 4, 5, 8] to demonstrate how the commonElements function works. 
+- The output will be [1, 5] since these are the integers that appear in all three arrays.
 
 
 
