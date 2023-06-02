@@ -1,4 +1,7 @@
 var nextPermutation = function(nums) {
+    console.log(`
+    The Array is : [${nums}]`
+    );
     // Length of the array
     const n = nums.length;
     // Index of the first element that is smaller than

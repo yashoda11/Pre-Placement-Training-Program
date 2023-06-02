@@ -24,7 +24,7 @@ var threeSumClosest = function (nums, target) {
         }
     }
     return `
-    The Sum that is closest to the target ${target} is : ${closest}
+    The Sum which is closest to the given target ${target} value is : ${closest}
     `;
 };
 var nums = [-1, 2, 1, -4];

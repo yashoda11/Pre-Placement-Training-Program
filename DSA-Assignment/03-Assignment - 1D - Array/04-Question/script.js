@@ -3,7 +3,7 @@ var returnIndex = function( nums , target ){
     if(nums[i] == target)
         return  `
         The Array is : [${nums}], 
-        The Target value is : ${target} at the index of : ${i}
+        The Target value ${target} is at the index of : ${i}
         `;
     }
     nums.unshift(target);
@@ -12,7 +12,7 @@ var returnIndex = function( nums , target ){
         if(nums[i] == target) 
         return `
         The Target Value ${target} is not in the given array. Hence, adding target Value to the given array. 
-        The New Array is: ${nums} 
+        The New Array is: [${nums}] 
         The Target Value ${target} at the index of ${i}
         `;
     }
