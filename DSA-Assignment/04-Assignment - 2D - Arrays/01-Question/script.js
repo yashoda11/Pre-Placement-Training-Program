@@ -27,5 +27,4 @@ function commonElements(arr1, arr2, arr3) {
   const arr2 = [1, 2, 5, 7, 9];
   const arr3 = [1, 3, 4, 5, 8];
   console.log(`The Comment Elements appeared in the given three arrays are : `);
-  console.log(commonElements(arr1, arr2, arr3)); // Output: [1, 5]
-  
+  console.log(commonElements(arr1, arr2, arr3));
