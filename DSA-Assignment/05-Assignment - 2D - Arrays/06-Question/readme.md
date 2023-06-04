@@ -17,8 +17,8 @@ Given an integer array nums of length n where all the integers of nums are in th
     1. Initialize an empty array result to store the integers that appear twice.
     2. Iterate through each number num in nums.
     3. For each num, calculate the index idx by taking the absolute value of num and subtracting 1 (since the integers are in the range [1, n]).
-    4. If nums[idx] is positive, multiply it by -1 to mark it as visited.
-    5. If nums[idx] is already negative, it means num has appeared before, so add its absolute value to the result array.
+    4. If nums[i] is positive, multiply it by -1 to mark it as visited.
+    5. If nums[i] is already negative, it means num has appeared before, so add its absolute value to the result array.
     6. Finally, return the result array containing the integers that appear twice.
 - In this example, we iterate through each number in nums and use the absolute value of the number to calculate the corresponding index in the array. We then check the value at that index:
 - If it's positive, we mark it as visited by multiplying it by -1.
