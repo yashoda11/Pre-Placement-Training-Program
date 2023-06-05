@@ -13,10 +13,20 @@ var moveAllZeorsToAtEnd = function (nums)
 		nums.push(0);
 	}
 	return `
-	The given array after shifting all zeros to right side is: [${nums}]
+	The given array after shifting all zeros to right side is: [${nums}].
 	`;
 }
-var nums1 = [0,1,0,3,12];  //Example - 01
-var nums2 = [0];           //Example - 02
+
+//Example - 01
+var nums1 = [0,1,0,3,12];  
 console.log(moveAllZeorsToAtEnd(nums1));
+
+//Example - 02
+var nums2 = [0];           
 console.log(moveAllZeorsToAtEnd(nums2));
+
+
+
+// OUTPUT :
+// The given array after shifting all zeros to right side is: [1,3,12,0,0].
+// The given array after shifting all zeros to right side is: [0].
