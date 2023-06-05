@@ -1,4 +1,4 @@
-var validMountainArray = function(arr) {
+var isMountainArray = function(arr) {
     const n = arr.length;
     if (n < 3) {
       return false;
@@ -25,5 +25,5 @@ var validMountainArray = function(arr) {
   };
   
   var arr = [2, 1,];
-  console.log(validMountainArray(arr));
+  console.log(isMountainArray(arr));
   
