@@ -17,6 +17,6 @@ var moveAllZeorsToAtEnd = function (nums)
 	`;
 }
 var nums1 = [0,1,0,3,12];  //Example - 01
-var nums2 = [0];           //Example - 0
+var nums2 = [0];           //Example - 02
 console.log(moveAllZeorsToAtEnd(nums1));
 console.log(moveAllZeorsToAtEnd(nums2));
