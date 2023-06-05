@@ -26,3 +26,7 @@ var findArrayElement = function (matrix, target) {
   var target = 3;
   console.log(findArrayElement(matrix, target));
   
+
+
+  // OUTPUT :
+  // true

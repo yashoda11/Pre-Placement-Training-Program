@@ -15,3 +15,7 @@ var nums1 = [5,3,4,2];
 var nums2 = [4,2,2,5];
 
 console.log(minimumProductSum(nums1, nums2));
+
+
+//    OUTPUT :
+//    The Minimum Product Sum for the given two arrays is : 40.

@@ -1,6 +1,6 @@
 var findDoubleArray = function (changed) {
     console.log(`
-        The given double Array is : [${changed}]`);;
+        The given double Array is : [${changed}].`);;
     if (changed.length % 2 !== 0) {
         return `
         The length of changed ${changed.length} is odd, it cannot be a doubled array.
@@ -16,8 +16,15 @@ var findDoubleArray = function (changed) {
         }
     }
     return `
-        The Original array is : [${double}]
+        The Original array is : [${double}].
     `;
 };
 var changed = [1,3,4,2,6,8];
 console.log((findDoubleArray(changed)));
+
+
+
+
+//        OUTPUT :
+//        The given double Array is : [1,3,4,2,6,8].
+//        The Original array is : [1,3,4].

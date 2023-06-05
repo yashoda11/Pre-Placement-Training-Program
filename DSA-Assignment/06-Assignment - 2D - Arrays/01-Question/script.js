@@ -16,3 +16,8 @@ var reconstructPermutation = function (s) {
   }
   const s = "IDID";
   console.log(reconstructPermutation(s));
+
+
+
+  // OUTPUT :
+  // [ 0, 4, 1, 3, 2 ]

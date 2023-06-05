@@ -27,3 +27,7 @@ var isMountainArray = function(arr) {
   var arr = [2, 1,];
   console.log(isMountainArray(arr));
   
+
+
+  // OUTPUT :
+  // false
