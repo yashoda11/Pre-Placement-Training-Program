@@ -33,6 +33,7 @@ console.log(`
 
 
 
+
 //    OUTPUT :
 //    The First Unique Character in a given string "leetcode" at the index of : 0.
 //    The First Unique Character in a given string "loveleetcode" at the index of : 2.

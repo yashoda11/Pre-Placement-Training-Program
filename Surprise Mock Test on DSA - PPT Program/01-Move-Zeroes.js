@@ -27,6 +27,7 @@ console.log(moveAllZeorsToAtEnd(nums2));
 
 
 
+
 // OUTPUT :
 // The given array after shifting all zeros to right side is: [1,3,12,0,0].
 // The given array after shifting all zeros to right side is: [0].
