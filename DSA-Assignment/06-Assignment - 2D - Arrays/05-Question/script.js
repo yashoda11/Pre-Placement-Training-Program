@@ -18,4 +18,5 @@ console.log(minimumProductSum(nums1, nums2));
 
 
 //    OUTPUT :
+
 //    The Minimum Product Sum for the given two arrays is : 40.

@@ -20,4 +20,5 @@ var reconstructPermutation = function (s) {
 
 
   // OUTPUT :
+  
   // [ 0, 4, 1, 3, 2 ]

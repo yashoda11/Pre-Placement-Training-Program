@@ -30,4 +30,5 @@ var findMaxLength = function(nums) {
 
 
   //    OUTPUT :
+  
   //    The maximum length of a contiguous subarray with an equal number of 0 and 1 is : 2

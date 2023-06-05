@@ -26,5 +26,6 @@ console.log((findDoubleArray(changed)));
 
 
 //        OUTPUT :
+
 //        The given double Array is : [1,3,4,2,6,8].
 //        The Original array is : [1,3,4].

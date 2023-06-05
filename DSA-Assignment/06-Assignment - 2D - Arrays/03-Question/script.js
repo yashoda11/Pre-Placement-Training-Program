@@ -30,4 +30,5 @@ var isMountainArray = function(arr) {
 
 
   // OUTPUT :
+  
   // false

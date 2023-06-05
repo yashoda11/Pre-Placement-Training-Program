@@ -26,5 +26,6 @@ var multiply = function(mat1, mat2) {
 
 
   // OUTPUT :
+  
   // The Multiplication of given two sparse matrices is :
   // [ [ 7, 0, 0 ], [ -7, 0, 3 ] ]
