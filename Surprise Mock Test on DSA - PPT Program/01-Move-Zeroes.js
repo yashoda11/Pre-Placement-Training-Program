@@ -16,7 +16,7 @@ var moveAllZeorsToAtEnd = function (nums)
 	The given array after shifting all zeros to right side is: [${nums}]
 	`;
 }
-var nums1 = [0,1,0,3,12];
-var nums2 = [0];
+var nums1 = [0,1,0,3,12];  //Example - 01
+var nums2 = [0];           //Example - 0
 console.log(moveAllZeorsToAtEnd(nums1));
 console.log(moveAllZeorsToAtEnd(nums2));
