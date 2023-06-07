@@ -16,15 +16,10 @@ Given an encoded string, return its decoded string.
 
 **Output:** "aaabcbc"
 
-
-In this code, we iterate through the characters of the input string s. If the current character is not ']', we push it to the stack since it's part of the decoded string.
-
-When we encounter ']', it means we have to decode the substring inside the brackets. We pop characters from the stack until we find the corresponding '[' character, building the substring in reverse order.
-
-After popping '[' from the stack, we extract the repetition count by popping digits from the stack until we reach a non-digit character.
-
-Next, we repeat the substring count number of times and push it back to the stack.
-
-Finally, we join all the characters in the stack to form the decoded string and return it.
-
-In the example usage, we decode the string "3[a]2[bc]", which results in the decoded string "aaabcbc".
+**Explanation :**
+- In this code, we iterate through the characters of the input string s. If the current character is not ']', we push it to the stack since it's part of the decoded string.
+- When we encounter ']', it means we have to decode the substring inside the brackets. We pop characters from the stack until we find the corresponding '[' character, building the substring in reverse order.
+- After popping '[' from the stack, we extract the repetition count by popping digits from the stack until we reach a non-digit character.
+- Next, we repeat the substring count number of times and push it back to the stack.
+- Finally, we join all the characters in the stack to form the decoded string and return it.
+- In the example usage, we decode the string "3[a]2[bc]", which results in the decoded string "aaabcbc".
