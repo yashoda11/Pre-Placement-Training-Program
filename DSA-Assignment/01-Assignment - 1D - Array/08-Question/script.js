@@ -1,28 +1,24 @@
-function findErrorNums(nums) {
-    const numSet = new Set();
-    let duplicate = -1;
-    let missing = -1;
-  
-    for (const num of nums) {
-      if (numSet.has(num)) {
-        duplicate = num;
-      } else {
-        numSet.add(num);
-      }
+var findErrorNums =  function(nums) {
+  const n = nums.length;
+  const set = new Set();
+  let duplicate = 0;
+  let missing = 0;
+
+  for (const num of nums) {
+    if (set.has(num)) {
+      duplicate = num;
     }
-  
-    for (let i = 1; i <= nums.length; i++) {
-      if (!numSet.has(i)) {
-        missing = i;
-        break;
-      }
-    }
-  
-    return [duplicate, missing];
+    set.add(num);
   }
-  
-  // Example usage:
-  const nums = [1, 2, 3, 4, 4];
-  const result = findErrorNums(nums);
-  console.log(result); // Output: [2, 3]
-  
+
+  for (let i = 1; i <= n; i++) {
+    if (!set.has(i)) {
+      missing = i;
+      break;
+    }
+  }
+
+  return [duplicate, missing];
+}
+const nums = [1, 2, 2, 4];
+console.log(findErrorNums(nums));                  // Output: [2, 3]
