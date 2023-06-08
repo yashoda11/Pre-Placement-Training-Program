@@ -1,13 +1,28 @@
-var displayTwiceOccuredNoANDMissingNumber = function(nums){
-for ( i = 0 ; i < nums.length ; i++ ){
-    if(nums[i] === nums[i+1]){
-        return `
-        OUTPUT : \n
-        In the given array [${nums}] \n
-        The Repeated (Duplicate) Number and Missing Number respectively is : [${nums[i]},${(nums[i+1]+1)}] 
-        `;
+function findErrorNums(nums) {
+    const numSet = new Set();
+    let duplicate = -1;
+    let missing = -1;
+  
+    for (const num of nums) {
+      if (numSet.has(num)) {
+        duplicate = num;
+      } else {
+        numSet.add(num);
+      }
     }
-}
-}
-var nums = [1,2,2,4];
-console.log(displayTwiceOccuredNoANDMissingNumber(nums));
+  
+    for (let i = 1; i <= nums.length; i++) {
+      if (!numSet.has(i)) {
+        missing = i;
+        break;
+      }
+    }
+  
+    return [duplicate, missing];
+  }
+  
+  // Example usage:
+  const nums = [1, 2, 3, 4, 4];
+  const result = findErrorNums(nums);
+  console.log(result); // Output: [2, 3]
+  
