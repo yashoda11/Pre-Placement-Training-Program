@@ -9,6 +9,7 @@ function calculateStringLength(str) {
   }
   
   // Examples :
+  
   // Example - 01 :
   var str = 'abcd';
   console.log('The Length of the String "' + str + '" is :', calculateStringLength(str));
@@ -16,4 +17,3 @@ function calculateStringLength(str) {
   // Example - 02 :
   var str = 'GEEKSFORGEEKS';
   console.log('The Length of the String "' + str + '" is :', calculateStringLength(str));
-  
