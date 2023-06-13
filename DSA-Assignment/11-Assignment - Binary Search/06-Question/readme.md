@@ -1,6 +1,7 @@
 # **Assignment Questions - 11**
 
 ## **Question - 06**
+
 Suppose an array of length `n` sorted in ascending order is **rotated** between `1` and `n` times. 
 - For example, the array `nums = [0,1,2,4,5,6,7]` might become:
     - `[4,5,6,7,0,1,2]` if it was rotated `4` times.
@@ -30,7 +31,7 @@ Output: 11
 Explanation: The original array was [11,13,15,17] and it was rotated 4 times.
 ```
 
-**Explanatio :**
+**Explanation :**
 - To find the minimum element in a rotated sorted array nums of unique elements with a time complexity of O(log n), we can use a modified binary search algorithm.
 - The idea behind the algorithm is to compare the middle element of the array with the first and last elements to determine the rotation point. 
 - If the middle element is smaller than the last element, the rotation point is in the first half of the array. Otherwise, it is in the second half of the array.

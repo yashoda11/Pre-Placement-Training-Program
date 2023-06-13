@@ -8,7 +8,6 @@ Given two integer arrays `nums1` and `nums2`, return *an array of their inte
 ```
 Input: nums1 = [1,2,2,1], nums2 = [2,2]
 Output: [2]
-
 ```
 **Example - 02:**
 ```
@@ -19,7 +18,7 @@ Explanation: [4,9] is also accepted.
 
 **Explanation :**
 - To find the intersection of two arrays nums1 and nums2 using binary search, we can follow the following steps:
-**Algorithn :**
+- **Algorithn :**
     1. Sort both arrays nums1 and nums2 in ascending order.
     2. Initialize an empty array result to store the intersection elements.
     3. Iterate over each element num in nums1.

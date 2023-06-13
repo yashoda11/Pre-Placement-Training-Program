@@ -8,7 +8,6 @@ A peak element is an element that is strictly greater than its neighbors.
 - You must write an algorithm that runs in `O(log n)` time.
 
 **Example - 01:**
-
 ```
 Input: nums = [1,2,3,1]
 Output: 2
@@ -16,7 +15,6 @@ Explanation: 3 is a peak element and your function should return the index numbe
 ```
 
 **Example - 02:**
-
 ```
 Input: nums = [1,2,1,3,5,6,4]
 Output: 5

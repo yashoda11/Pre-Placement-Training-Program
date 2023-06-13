@@ -18,7 +18,7 @@ Output: [4,9]
 Explanation: [9,4] is also accepted.
 ```
 
-**Explanatio :**
+**Explanation :**
 - To find the intersection of two integer arrays nums1 and nums2 using binary search, we can first sort both arrays. 
 - Then, for each element in one array, we perform a binary search in the other array to check if it exists. 
 - If it does, we add it to the result array and remove the element from the other array to handle duplicates.
