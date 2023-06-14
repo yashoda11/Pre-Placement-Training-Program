@@ -22,3 +22,13 @@ Output:-1
 Explanation : 
 In the second example, there are 4 nodes in the linked list and we need to find 5th from the end. Since 'n' is more than the number of nodes in the linked list, the output is -1.
 ```
+
+**Analysis :**
+- In this code, the Node class represents a linked list node. 
+- The findNthFromEnd function takes the head of the linked list and the value N as input and finds the Nth node from the end of the linked list. 
+- It uses two pointers, slow and fast, where the fast pointer is moved N nodes ahead of the slow pointer. 
+- Then both pointers are moved simultaneously until the fast pointer reaches the end of the linked list. 
+- The value of the slow pointer represents the Nth node from the end.
+- The createLinkedList function creates a linked list from an array of values.
+- The code includes test cases where different inputs are provided. 
+- For each test case, it creates a linked list, finds the Nth node from the end, and prints the resulting value.

@@ -31,7 +31,7 @@ class Node {
   
     if (slow === null) {
       return `
-      ${N} is more than the number of nodes (${head.length}) in the linked list, the output is -1
+      ${N} is more than the number of nodes in the linked list, the output is -1
       `; // N is greater than the number of nodes
     }
   
@@ -71,9 +71,11 @@ class Node {
   for (const testCase of testCases) {
     const head = createLinkedList(testCase.values);
     const result = findNthFromEnd(head, testCase.N);
-    console.log(`Input: LinkedList: ${testCase.values.join('->')}`);
-    console.log(`N: ${testCase.N}`);
-    console.log(`Output: In the given ${testCase.values.length} Nodes, the Node ${testCase.N} from the end is : ${result}`);
+    console.log(`Input:
+    LinkedList: ${testCase.values.join('->')}
+    N: ${testCase.N}     `);
+    console.log(`Output: 
+    In the given ${testCase.values.length} Nodes, the Node ${testCase.N} from the end is : ${result}`);
     console.log('-----------------------');
   }
   
