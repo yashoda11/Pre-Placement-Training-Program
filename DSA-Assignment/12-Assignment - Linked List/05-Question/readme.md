@@ -45,3 +45,8 @@ The link list looks like
 A loop is present.
 If you remove it successfully, the answer will be 1.
 ```
+
+**Analysis :**
+- This implementation defines two classes, Node and LinkedList, to represent the linked list and its nodes. 
+- The detectAndRemoveLoop method is responsible for detecting and removing the loop in the linked list. 
+- The output of each example is printed using console.log.

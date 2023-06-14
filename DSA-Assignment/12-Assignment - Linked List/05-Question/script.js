@@ -1,101 +1,84 @@
 class Node {
   constructor(value) {
-    this.value = value;
+    this.data = value;
     this.next = null;
   }
 }
 
-function detectAndRemoveLoop(head) {
-  if (head == null || head.next == null) {
-    return 0; // No loop present
+class LinkedList {
+  constructor() {
+    this.head = null;
   }
 
-  let slow = head;
-  let fast = head;
+  append(value) {
+    const newNode = new Node(value);
 
-  // Move fast pointer by two steps and slow pointer by one step
-  while (fast != null && fast.next != null) {
-    slow = slow.next;
-    fast = fast.next.next;
-
-    if (slow === fast) {
-      // Loop detected
-      break;
+    if (!this.head) {
+      this.head = newNode;
+      return;
     }
-  }
 
-  // If loop is not present, return 0
-  if (slow !== fast) {
-    return 0;
-  }
-
-  // Move slow pointer to the head and keep fast pointer at the meeting point
-  slow = head;
-  while (slow.next !== fast.next) {
-    slow = slow.next;
-    fast = fast.next;
-  }
-
-  // Remove the loop by setting the next of the last node in the loop to null
-  fast.next = null;
-
-  return 1; // Loop successfully removed
-}
-
-function createLinkedList(values) {
-  if (values.length === 0) {
-    return null;
-  }
-
-  const head = new Node(values[0]);
-  let current = head;
-
-  for (let i = 1; i < values.length; i++) {
-    const newNode = new Node(values[i]);
+    let current = this.head;
+    while (current.next) {
+      current = current.next;
+    }
     current.next = newNode;
-    current = newNode;
   }
 
-  return head;
-}
+  detectAndRemoveLoop() {
+    let slowPtr = this.head;
+    let fastPtr = this.head;
+    let loopExists = false;
 
-function printLinkedList(head) {
-  let current = head;
-  const values = [];
+    while (slowPtr && fastPtr && fastPtr.next) {
+      slowPtr = slowPtr.next;
+      fastPtr = fastPtr.next.next;
 
-  while (current != null) {
-    values.push(current.value);
-    current = current.next;
+      if (slowPtr === fastPtr) {
+        loopExists = true;
+        break;
+      }
+    }
+
+    if (!loopExists) {
+      return 0; // No loop found
+    }
+
+    // Move slowPtr to the head and advance both pointers at the same pace until they meet
+    slowPtr = this.head;
+    while (slowPtr.next !== fastPtr.next) {
+      slowPtr = slowPtr.next;
+      fastPtr = fastPtr.next;
+    }
+
+    // Unlink the last node to remove the loop
+    fastPtr.next = null;
+
+    return 1; // Loop removed successfully
   }
-
-  console.log(values.join(" -> "));
 }
 
-// Example usage
-var N = 4;
-var values = [1, 2, 3, 4];
-var X = 1;
+// Example -01 :
+const list1 = new LinkedList();
+list1.append(1);
+list1.append(3);
+list1.append(4);
+list1.head.next.next.next = list1.head.next; // Creating a loop
+console.log(list1.detectAndRemoveLoop()); // Output: 1
 
-const head = createLinkedList(values);
-console.log("Original Linked List:");
-printLinkedList(head);
+// Example - 02 :
+const list2 = new LinkedList();
+list2.append(1);
+list2.append(8);
+list2.append(3);
+list2.append(4);
+console.log(list2.detectAndRemoveLoop()); // Output: 0
 
-const result = detectAndRemoveLoop(head);
-console.log("Output:", result);
-
-console.log("Updated Linked List:");
-printLinkedList(head);
-
-var N = 3;
-var values = [1, 3, 4];
-var X = 2;
-
-var head1 = createLinkedList(values);
-console.log("Original Linked List:");
-printLinkedList(head1);
-
-var result1 = detectAndRemoveLoop(head);
-console.log("Output:", result1);
-
-console.log("Updated Linked List:");
-printLinkedList(head1);
+// Example - 03 :
+const list3 = new LinkedList();
+list3.append(1);
+list3.append(2);
+list3.append(3);
+list3.append(4);
+list3.head.next.next.next.next = list3.head; // Creating a loop
+console.log(list3.detectAndRemoveLoop()); // Output: 1
