@@ -19,11 +19,13 @@ Output:1 2 4 5
 Input: LinkedList: 2->4->6->7->5->1
 Output:2 4 6 5 1
 ```
-
-To delete the middle node(s) of a singly linked list in JavaScript, we can use the fast and slow pointer technique. The fast pointer moves two steps at a time, while the slow pointer moves one step at a time. By the time the fast pointer reaches the end of the list, the slow pointer will be pointing to the middle node(s) of the list.
-
-You can run this code in a JavaScript environment to see the output. The Node class represents a single node in the linked list, and the LinkedList class provides the necessary operations on the linked list, including adding nodes, deleting middle node(s), and printing the list.
-
-
-
-
+**Explanation :**
+- In this code, the Node class represents a linked list node. 
+- The deleteMiddle function takes the head of the linked list as input and deletes the middle element(s) from it. - It uses the two-pointer approach to find the middle element(s). 
+- If the linked list has an odd number of nodes, it deletes the middle element. 
+- If the linked list has an even number of nodes, it deletes the second middle element. 
+- The modified linked list is then returned.
+- The linkedListToArray function converts the linked list to an array for easy output display. 
+- The createLinkedList function creates a linked list from an array of values.
+- The code includes test cases where different inputs are provided. 
+-  For each test case, it creates a linked list, deletes the middle element(s), and prints the resulting linked list values.
