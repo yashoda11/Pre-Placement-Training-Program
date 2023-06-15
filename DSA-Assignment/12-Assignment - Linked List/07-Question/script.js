@@ -1,85 +1,87 @@
 class Node {
-  constructor(value) {
-    this.data = value;
+  constructor(data) {
+    this.data = data;
     this.next = null;
   }
 }
 
-class LinkedList {
-  constructor() {
-    this.head = null;
+class MergeTwoListAtAlternatePositions {
+  printList(head) {
+    let currNode = head;
+    let output = "";
+    while (currNode !== null) {
+      output += currNode.data + "->";
+      currNode = currNode.next;
+    }
+    output = output.slice(0, output.length - 2); // Remove the last "->"
+    process.stdout.write(output);
   }
 
-  append(value) {
-    const newNode = new Node(value);
+  mergeList(A, B) {
+    let result = A;
 
-    if (!this.head) {
-      this.head = newNode;
-      return;
+    while (A !== null && B !== null) {
+      let node1next = A.next;
+      let node2next = B.next;
+
+      A.next = B;
+      B.next = node1next;
+
+      A = node1next;
+      B = node2next;
     }
 
-    let current = this.head;
-    while (current.next) {
-      current = current.next;
-    }
-    current.next = newNode;
-  }
-
-  mergeAlternate(list2) {
-    if (!this.head || !list2.head) {
-      return;
-    }
-
-    let current1 = this.head;
-    let current2 = list2.head;
-
-    while (current1 && current2) {
-      let next1 = current1.next;
-      let next2 = current2.next;
-
-      current1.next = current2;
-      current2.next = next1;
-
-      current1 = next1;
-      current2 = next2;
-    }
-
-    list2.head = null;
-  }
-
-  toString() {
-    let output = '';
-    let current = this.head;
-    while (current) {
-      output += current.data;
-      if (current.next) {
-        output += '->';
-      }
-      current = current.next;
-    }
-    return output;
+    console.log("\nMerge a linked list into another:");
+    this.printList(result);
+    console.log("\nRemaining Second List if any");
+    this.printList(B);
   }
 }
 
-// Example 1
-const list1 = new LinkedList();
-list1.append(5);
-list1.append(7);
-list1.append(17);
-list1.append(13);
-list1.append(11);
 
-const list2 = new LinkedList();
-list2.append(12);
-list2.append(10);
-list2.append(2);
-list2.append(4);
-list2.append(6);
+// Examples :
+// Example - 01 :
+// Create the first linked list: 5->7->17->13->11
+var A = new Node(5);
+A.next = new Node(7);
+A.next.next = new Node(17);
+A.next.next.next = new Node(13);
+A.next.next.next.next = new Node(11);
 
-list1.mergeAlternate(list2);
+// Create the second linked list: 12->10->2->4->6
+var B = new Node(12);
+B.next = new Node(10);
+B.next.next = new Node(2);
+B.next.next.next = new Node(4);
+B.next.next.next.next = new Node(6);
 
-console.log('First List:', list1.toString());
-// Output: First List: 5->12->7->10->17->2->13->4->11->6
+var obj = new MergeTwoListAtAlternatePositions();
+console.log("Input - 01 :");
+console.log("First List :");
+obj.printList(A);
+console.log("\nSecond List :");
+obj.printList(B);
+obj.mergeList(A, B);
+console.log("");
 
-console.log('Second List:', list2.toString());
-// Output: Second List: (empty)
+
+// Example - 02 :
+// Create the first linked list: 1->2->3
+A = new Node(1);
+A.next = new Node(2);
+A.next.next = new Node(3);
+
+// Create the second linked list: 4->5->6->7->8
+B = new Node(4);
+B.next = new Node(5);
+B.next.next = new Node(6);
+B.next.next.next = new Node(7);
+B.next.next.next.next = new Node(8);
+
+obj = new MergeTwoListAtAlternatePositions();
+console.log("Input - 02 :");
+console.log("First List :");
+obj.printList(A);
+console.log("\nSecond List :");
+obj.printList(B);
+obj.mergeList(A, B);
