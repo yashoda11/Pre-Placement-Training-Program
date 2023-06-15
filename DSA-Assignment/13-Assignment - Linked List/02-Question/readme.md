@@ -22,3 +22,8 @@ LinkedList:
 Output:
 10->12->25->34
 ```
+
+**Explanation :**
+- The code defines a Node class to represent each node in the linked list. 
+- The removeDuplicates function removes duplicate nodes from the list by traversing it once. 
+- Finally, the displayList function is used to display the linked list before and after removing duplicates.
