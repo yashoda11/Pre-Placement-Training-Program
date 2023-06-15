@@ -24,3 +24,8 @@ Explanation:
 The first 3 elements are 1,2,3 are reversed first and then elements 4,5 are reversed.
 Hence, the resultant linked list is 3->2->1->5->4.
 ```
+
+**Analysis :&**
+- The code defines a Node class to represent each node in the linked list. 
+- The reverseInGroups function reverses the linked list in groups of k nodes. 
+- The displayList function is used to display the linked list before and after the reversal.
