@@ -84,7 +84,7 @@ class Node {
   let mergedHead = mergeSortedLists(a, b);
   
   console.log("Output : \nMerged Linked List of a and b is : ");
-  displayList(mergedHead); // Output: 2->3->5->10->15->20
+  displayList(mergedHead);                     // Output: 2->3->5->10->15->20
   
   // Test case 2
   let x = new Node(1);
@@ -100,5 +100,5 @@ class Node {
   let mergedHead2 = mergeSortedLists(x, y);
   
   console.log("Output : \nMerged Linked List of a and b is : ");
-  displayList(mergedHead2); // Output: 1->1->2->4
+  displayList(mergedHead2);                            // Output: 1->1->2->4
   
