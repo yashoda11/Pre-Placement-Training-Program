@@ -40,3 +40,15 @@ Output:1
 Explanation : 
 In the given testcase , applying the method as stated in the above example, the output will be 1.
 ```
+
+**Explanation :**
+- We can use this copyRandomList function to create a copy of a given linked list with arbitrary pointers. 
+- The input is the head node of the original linked list, and it returns the head node of the copied linked list.
+- In this code, there are two examples provided:
+- **Example 1 :** 
+    - N1 = 4, M1 = 2, values1 = [1, 2, 3, 4], pairs1 = [[1, 2], [2, 4]]
+- **Example 2 :** 
+    - N2 = 4, M2 = 2, values2 = [1, 3, 5, 9], pairs2 = [[1, 1], [3, 4]]
+- For each example, it creates the original linked list based on the given values and pairs. 
+- Then, it calls the copyRandomList function to obtain the copied linked list. 
+- Finally, it prints the values and random pointers of the copied list to verify the result.
