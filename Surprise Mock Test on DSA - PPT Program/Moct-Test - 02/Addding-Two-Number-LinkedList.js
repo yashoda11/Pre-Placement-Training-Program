@@ -1,4 +1,9 @@
-function addTwoNumbers(l1, l2) {
+function ListNode(val) {
+    this.val = val;
+    this.next = null;
+  }
+  
+  function addTwoNumbers(l1, l2) {
     let result = [];
     let carry = 0;
   
@@ -21,54 +26,65 @@ function addTwoNumbers(l1, l2) {
     return result;
   }
   
-  // Example 1
-  let l1 = { val: 2, next: { val: 4, next: { val: 3, next: null } } };
-  let l2 = { val: 5, next: { val: 6, next: { val: 4, next: null } } };
+//Examples :
+
+// Example - 01 :
+  let l1 = new ListNode(2);
+  l1.next = new ListNode(4);
+  l1.next.next = new ListNode(3);
   
-  console.log(addTwoNumbers(l1, l2)); // Output: [7, 0, 8]
+  let l2 = new ListNode(5);
+  l2.next = new ListNode(6);
+  l2.next.next = new ListNode(4);
   
-  // Example 2
-  l1 = { val: 0, next: null };
-  l2 = { val: 0, next: null };
+  console.log("\nExample - 01 :");
+  console.log("Input :");
+  console.log("l1 = ", linkedListToArray(l1));
+  console.log("l2 = ", linkedListToArray(l2));
+  console.log("Output:", addTwoNumbers(l1, l2));
+  console.log("\n------------------------\n");
   
-  console.log(addTwoNumbers(l1, l2)); // Output: [0]
+// Example - 02 :
+  l1 = new ListNode(0);
+  l2 = new ListNode(0);
   
-  // Example 3
-  l1 = {
-    val: 9,
-    next: {
-      val: 9,
-      next: {
-        val: 9,
-        next: {
-          val: 9,
-          next: {
-            val: 9,
-            next: {
-              val: 9,
-              next: {
-                val: 9,
-                next: null,
-              },
-            },
-          },
-        },
-      },
-    },
-  };
-  l2 = {
-    val: 9,
-    next: {
-      val: 9,
-      next: {
-        val: 9,
-        next: {
-          val: 9,
-          next: null,
-        },
-      },
-    },
-  };
+  console.log("Example - 02 :");
+  console.log("Input : ");
+  console.log("l1 = ", linkedListToArray(l1));
+  console.log("l2 = ", linkedListToArray(l2));
+  console.log("Output : ", addTwoNumbers(l1, l2));
+  console.log("\n------------------------\n");
   
-  console.log(addTwoNumbers(l1, l2)); // Output: [8, 9, 9, 9, 0, 0, 0, 1]
+// Example - 03 :
+  l1 = new ListNode(9);
+  l1.next = new ListNode(9);
+  l1.next.next = new ListNode(9);
+  l1.next.next.next = new ListNode(9);
+  l1.next.next.next.next = new ListNode(9);
+  l1.next.next.next.next.next = new ListNode(9);
+  l1.next.next.next.next.next.next = new ListNode(9);
+  
+  l2 = new ListNode(9);
+  l2.next = new ListNode(9);
+  l2.next.next = new ListNode(9);
+  l2.next.next.next = new ListNode(9);
+  
+  console.log("Example - 03 :");
+  console.log("Input :");
+  console.log("l1 = ", linkedListToArray(l1));
+  console.log("l2 = ", linkedListToArray(l2));
+  console.log("Output : ", addTwoNumbers(l1, l2));
+  
+  // Helper function to convert linked list to array
+  function linkedListToArray(head) {
+    let arr = [];
+    let curr = head;
+  
+    while (curr !== null) {
+      arr.push(curr.val);
+      curr = curr.next;
+    }
+  
+    return arr;
+  }
   
