@@ -46,5 +46,5 @@ Output : 2 -1
     - The second pop() will return -1 since the stack is already empty.
 - The code now stores the outputs in arrays output1 and output2, respectively, and logs them to the console.
 - The exact outputs for both example inputs are:
-- Example 1: [3, 4]
-- Example 2: [2, -1]
+- Example - 01 : [3, 4]
+- Example - 02 : [2, -1]
