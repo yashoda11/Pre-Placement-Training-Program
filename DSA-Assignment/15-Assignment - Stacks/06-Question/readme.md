@@ -21,7 +21,7 @@ Explanation : After solving the given postfix expression, we have -3 as result.
 ```
 
 **Analysis :**
-- To evaluate a postfix expression, you can use a stack and follow these steps.
+- To evaluate a postfix expression, we can use a stack and follow these steps.
 - **Algorithm :**
     1. Create an empty stack.
     2. Iterate through each character in the postfix expression from left to right.
