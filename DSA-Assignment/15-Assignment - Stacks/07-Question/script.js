@@ -46,7 +46,7 @@ class MinStack {
   output.push(minStack.push(0)); // null
   output.push(minStack.push(-3)); // null
   output.push(minStack.getMin()); // -3
-  minStack.pop(); 
+  output.push(minStack.pop()); 
   output.push(minStack.top()); // 0
   output.push(minStack.getMin()); // -2
   
