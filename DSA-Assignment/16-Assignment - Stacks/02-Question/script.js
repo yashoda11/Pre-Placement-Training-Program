@@ -22,9 +22,9 @@ var sortStack = function (stack) {
 
 //Example - 01 :
   const stack1 = [34, 3, 31, 98, 92, 23];
-  console.log(sortStack(stack1)); // Output: [3, 23, 31, 34, 92, 98]
+  console.log(sortStack(stack1));              // Output: [3, 23, 31, 34, 92, 98]
   
 //Example - 02 :
   const stack2 = [3, 5, 1, 4, 2, 8];
-  console.log(sortStack(stack2)); // Output: [1, 2, 3, 4, 5, 8]
+  console.log(sortStack(stack2));              // Output: [1, 2, 3, 4, 5, 8]
   
