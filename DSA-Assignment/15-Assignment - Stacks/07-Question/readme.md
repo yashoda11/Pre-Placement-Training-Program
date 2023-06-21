@@ -48,5 +48,4 @@ minStack.getMin(); // return -2
 - The push() method pushes the element onto the stack and also checks if it is the new minimum element, updating the minStack accordingly. 
 - The pop() method removes the top element from the stack and also checks if it is the minimum element, updating the minStack if necessary. 
 - The top() method returns the top element of the stack, and the getMin() method returns the minimum element from the minStack.
-- **The Time Complexity** of all the operations in the MinStack class is **O(1)** since we are using two stacks to keep track of the elements and the minimum value.
-
+- **The Time Complexity** of all the operations in the **MinStack class** is **O(1)** since we are using two stacks to keep track of the elements and the minimum value.
