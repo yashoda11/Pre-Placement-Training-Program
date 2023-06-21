@@ -33,10 +33,12 @@ function findNextGreaterFrequency(arr) {
 // Example - 01 :
 
   var arr = [1, 1, 2, 3, 4, 2, 1];
-  var result = findNextGreaterFrequency(arr);
-  console.log(result); // Output: [-1, -1, 1, 2, 2, 1, -1]
+  console.log(`
+  The Next Greater Frequency for the each element in the given array [${arr}] is : [${findNextGreaterFrequency(arr)}] .
+  `);                           // Output: [-1, -1, 1, 2, 2, 1, -1]
 
 // Example - 02 :
-  var arr = [1, 1, 1, 2, 2, 2, 2, 11, 3, 3]
-  var result = findNextGreaterFrequency(arr);
-  console.log(result); // Output : [2, 2, 2, -1, -1, -1, -1, 3, -1, -1]
+  var arr = [1, 1, 1, 2, 2, 2, 2, 11, 3, 3];
+  console.log(`
+  The Next Greater Frequency for the each element in the given array [${arr}] is : [${findNextGreaterFrequency(arr)}] .
+  `);                         // Output : [2, 2, 2, -1, -1, -1, -1, 3, -1, -1]
