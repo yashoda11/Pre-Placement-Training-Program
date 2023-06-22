@@ -22,7 +22,9 @@ class DataStream {
     }
   }
   
-// Testing Example
+
+// Testing Example :
+
   const dataStream = new DataStream(4, 3);
   const output = [];
   
