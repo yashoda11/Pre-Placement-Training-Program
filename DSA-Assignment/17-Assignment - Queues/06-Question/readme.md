@@ -1,8 +1,8 @@
 # **Assignment Questions - 17**
 ## **Question - 06**
 
-You are given an integer array `deck`. There is a deck of cards where every card has a unique integer. 
-- The integer on the `ith` card is `deck[i]`.
+You are given an integer array **deck**. There is a deck of cards where every card has a unique integer. 
+- The integer on the **ith** card is **deck[i]**.
 - You can order the deck in any order you want. Initially, all the cards start face down (unrevealed) in one deck.
 - You will do the following steps repeatedly until all cards are revealed:
     1. Take the top card of the deck, reveal it, and take it out of the deck.
@@ -33,3 +33,12 @@ Since all the cards revealed are in increasing order, the answer is correct.
 Input: deck = [1,1000]
 Output: [1,1000]
 ```
+
+**Analysis :**
+- The revealCardsInIncreasingOrder function takes in the deck array and performs the following steps:
+    1. Sort the deck array in increasing order.
+    2. Initialize an empty queue queue.
+    3. Iterate over the sorted deck array in reverse order. For each card:
+        - If the queue is not empty, move the bottom card to the top by popping the last element and unshifting it to the front of the queue.
+        - Take the top card from the deck array and unshift it to the front of the queue.
+    4. Return the final queue which represents the ordering of the deck that reveals the cards in increasing order.
