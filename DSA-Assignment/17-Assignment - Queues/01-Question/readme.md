@@ -23,7 +23,7 @@ Input: s = "aabb"
 Output: -1
 ```
 
-**Explanation :**'
+**Explanation :**
 1. We define a function called findFirstNonRepeatingChar that takes a string s as input.
 2. We create an empty queue queue to store the characters along with their indices. We also create an empty object charCount to keep track of the count of each character.
 3. We iterate through each character in the string using a for loop.
@@ -36,5 +36,5 @@ Output: -1
     - The first non-repeating character is 'l' at index 0. 
 - **In Example 02 :**
     - The first non-repeating character is 'v' at index 2. 
-- **In Example 03 :**, 
+- **In Example 03 :**
     - There are no non-repeating characters, so the function returns -1.
