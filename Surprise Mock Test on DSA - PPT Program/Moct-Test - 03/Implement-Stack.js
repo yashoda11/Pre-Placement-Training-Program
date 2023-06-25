@@ -31,20 +31,20 @@ class Stack {
   
 // 1. Push Operations :
 
-  myStack.push(5);
-  myStack.push(10);
-  myStack.push(15);
+  myStack.push(2);
+  myStack.push(4);
+  myStack.push(6);
   
 // 2. Pop Operations :
 
-  console.log(myStack.pop());                   // Output: 15
-  console.log(myStack.pop());                   // Output: 10
+  console.log(myStack.pop());                   // Output: 6
+  console.log(myStack.pop());                   // Output: 4
 
 // 3. isEmpty Operations :
 
   console.log(myStack.isEmpty());               // Output: false
 
-  console.log(myStack.pop());                   // Output: 5
+  console.log(myStack.pop());                   // Output: 2
   console.log(myStack.pop());                   // Output: Stack is empty. Cannot perform pop operation.
   console.log(myStack.isEmpty());               // Output: true
   
