@@ -28,8 +28,21 @@ The array contains less than 2 elements, therefore return 0.
 
 **Algorithm :**
 - To find the maximum difference between two successive elements in a given array nums, we can follow the following steps:
-1. Sort the array in ascending order.
-2. Initialize a variable maxDifference to keep track of the maximum difference.
-3. Iterate through the sorted array and calculate the difference between each pair of successive elements.
-4. Update maxDifference if the calculated difference is greater than the current maximum.
-5. After iterating through the entire array, return maxDifference.
+    1. Sort the array in ascending order.
+    2. Initialize a variable maxDifference to keep track of the maximum difference.
+    3. Iterate through the sorted array and calculate the difference between each pair of successive elements.
+    4. Update maxDifference if the calculated difference is greater than the current maximum.
+    5. After iterating through the entire array, return maxDifference.
+
+**Explanation :**
+- The maximumGap function takes an array nums as input and implements the steps mentioned above to find the maximum difference between successive elements.
+- First, we check if the length of nums is less than 2. If so, we return 0 since there are not enough elements to calculate a difference.
+- We then sort the array in ascending order using the sort method with a comparison function (a, b) => a - b.
+- Next, we initialize the maxDifference variable to 0.
+- We iterate through the sorted array from the first element to the second-to-last element using a for loop.
+- In each iteration, we calculate the difference between the current element and the next element using nums[i + 1] - nums[i].
+- We update maxDifference if the calculated difference is greater than the current maximum.
+- After iterating through the entire array, we return the value of maxDifference.
+- The example cases demonstrate the usage of the maximumGap function and provide the expected output based on the given input values.
+- The **Time Complexity** of this solution is **O(n log n)** due to the sorting operation, and 
+- The **Space Complexity** is **O(1)** since we are using a constant amount of extra space.
