@@ -66,5 +66,5 @@ The balloons can be burst by 2 arrows:
     - After iterating through all the balloons, we return the value of arrows, which represents the minimum number of arrows needed to burst all the balloons.
 - **Time Complexity :**
     - The **Time Complexity** of this solution is **O(n log n)** due to the sorting step, where n is the number of balloons. 
-- **space complexity :**
+- **Space Complexity :**
     - The **Space Complexity** is **O(1)** as we only need a constant amount of extra space to store the variables.
