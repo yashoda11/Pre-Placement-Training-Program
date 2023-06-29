@@ -20,14 +20,14 @@ var containsDuplicate = function (nums) {
 // Example - 01 :
 var nums = [1,2,3,1];
 console.log("Example - 01 :");
-console.log(containsDuplicate(nums));                                                            // Output: true
+console.log(containsDuplicate(nums));       // Output: true
 
 // Example - 02 :
 var nums = [1,2,3,4];
 console.log("Example - 02 :");
-console.log(containsDuplicate(nums));
+console.log(containsDuplicate(nums));       // Output: false
 
 // Example - 03 :
 var nums = [1,1,1,3,3,4,3,2,4,2];
 console.log("Example - 03 :");
-console.log(containsDuplicate(nums));
+console.log(containsDuplicate(nums));       // Output: true
