@@ -25,3 +25,11 @@ The array contains less than 2 elements, therefore return 0.
 **Constraints :**
 - `1 <= nums.length <= 10^5`
 - `0 <= nums[i] <= 10^9`
+
+**Algorithm :**
+- To find the maximum difference between two successive elements in a given array nums, we can follow the following steps:
+1. Sort the array in ascending order.
+2. Initialize a variable maxDifference to keep track of the maximum difference.
+3. Iterate through the sorted array and calculate the difference between each pair of successive elements.
+4. Update maxDifference if the calculated difference is greater than the current maximum.
+5. After iterating through the entire array, return maxDifference.
