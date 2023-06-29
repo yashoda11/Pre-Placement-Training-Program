@@ -23,15 +23,18 @@ function find132pattern(nums) {
 
 // Example - 01 :
   var nums = [1, 2, 3, 4];
+  console.log("\nExample - 01 :");
   console.log(find132pattern(nums));                          // Output: false
   
 
 // Example - 02 :
   var nums = [3, 1, 4, 2];
+  console.log("\nExample - 02 :");
   console.log(find132pattern(nums));                          // Output: true
   
 
 // Example - 03 :
   var nums = [-1, 3, 2, 0];
+  console.log("\nExample - 03 :");
   console.log(find132pattern(nums));                          // Output: true
   
