@@ -1,0 +1,4 @@
+var mergeIntervals = function (intervals) {
+    
+     
+}
