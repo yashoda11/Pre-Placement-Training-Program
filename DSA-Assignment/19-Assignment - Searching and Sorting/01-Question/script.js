@@ -6,36 +6,28 @@ class ListNode {
   }
   
   function mergeKLists(lists) {
-    // Create a min-heap based on the node values
     const minHeap = new MinHeap();
   
-    // Add the first node of each linked list to the min-heap
     for (let list of lists) {
       if (list) {
         minHeap.insert(list);
       }
     }
   
-    // Create a dummy node as the starting point of the merged list
     const dummy = new ListNode(0);
     let curr = dummy;
   
-    // Process the nodes in the min-heap until it becomes empty
     while (!minHeap.isEmpty()) {
-      // Get the node with the minimum value from the min-heap
       const node = minHeap.removeMin();
   
-      // Append the node to the merged list
       curr.next = node;
       curr = curr.next;
   
-      // Move to the next node in the linked list
       if (node.next) {
         minHeap.insert(node.next);
       }
     }
   
-    // Return the merged list
     return dummy.next;
   }
   
@@ -145,28 +137,27 @@ class ListNode {
     return arr;
   }
   
-  // Example 1
-  const lists1 = [
+
+
+// Testing Examples :
+
+// Example - 01 :
+  var lists = [
     arrayToLinkedList([1, 4, 5]),
     arrayToLinkedList([1, 3, 4]),
     arrayToLinkedList([2, 6]),
   ];
-  const mergedList1 = mergeKLists(lists1);
-  const result1 = linkedListToArray(mergedList1);
-  console.log(result1);
-  // Output: [1, 1, 2, 3, 4, 4, 5, 6]
+  console.log("\nExample - 01 :");
+  console.log(linkedListToArray(mergeKLists(lists)));                   // Output: [1, 1, 2, 3, 4, 4, 5, 6]
   
-  // Example 2
-  const lists2 = [];
-  const mergedList2 = mergeKLists(lists2);
-  const result2 = linkedListToArray(mergedList2);
-  console.log(result2);
-  // Output: []
-  
-  // Example 3
-  const lists3 = [arrayToLinkedList([])];
-  const mergedList3 = mergeKLists(lists3);
-  const result3 = linkedListToArray(mergedList3);
-  console.log(result3);
-  // Output: []
-  
+
+// Example - 02 :
+  var lists = [];
+  console.log("\nExample - 02 :");
+  console.log(linkedListToArray(mergeKLists(lists)));                   // Output: []
+
+
+// Example - 03 :
+  var lists = [arrayToLinkedList([])];
+  console.log("\nExample - 03 :");
+  console.log(linkedListToArray(mergeKLists(lists)));                   // Output: []
