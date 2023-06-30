@@ -1,4 +1,4 @@
-function mergeSort(nums) {
+var mergeSort = function (nums) {
     if (nums.length <= 1) {
       return nums;
     }
@@ -8,9 +8,9 @@ function mergeSort(nums) {
     const right = mergeSort(nums.slice(mid));
   
     return merge(left, right);
-  }
+  };
   
-  function merge(left, right) {
+var merge = function (left, right) {
     const merged = [];
     let leftIndex = 0;
     let rightIndex = 0;
@@ -38,13 +38,21 @@ function mergeSort(nums) {
     }
   
     return merged;
-  }
+  };
   
-  // Example 1
-  console.log(mergeSort([5, 2, 3, 1]));
-  // Output: [1, 2, 3, 5]
+
+
+// Testing Examples :
+
+// Example - 01 :
+var nums = [5,2,3,1];
+console.log(`
+The Ascending Order of the given array [${nums}] elements are : [${mergeSort(nums)}] .
+ `);                             // Output: [1, 2, 3, 5]
   
-  // Example 2
-  console.log(mergeSort([5, 1, 1, 2, 0, 0]));
-  // Output: [0, 0, 1, 1, 2, 5]
+// Example - 02 :
+var nums = [5,1,1,2,0,0];
+console.log(`
+The Ascending Order of the given array [${nums}] elements are : [${mergeSort(nums)}] .
+ `);                             // Output: [0, 0, 1, 1, 2, 5]
   
