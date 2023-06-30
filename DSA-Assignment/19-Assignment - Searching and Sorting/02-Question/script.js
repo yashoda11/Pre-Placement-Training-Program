@@ -51,15 +51,26 @@ function countSmaller(nums) {
     return counts;
   }
   
-  // Example 1
-  console.log(countSmaller([5, 2, 6, 1]));
-  // Output: [2, 1, 1, 0]
+
+
+//Testing Exampels :
+
+// Example - 01 :
+var nums = [5,2,6,1];
+console.log(`
+The Number of Smaller Elements to the right of given array [${nums}] are : [${countSmaller(nums)}] .
+`);                    // Output: [2, 1, 1, 0]
   
-  // Example 2
-  console.log(countSmaller([-1]));
-  // Output: [0]
+
+// Example - 02 :
+var nums = [-1];
+console.log(`
+The Number of Smaller Elements to the right of given array [${nums}] are : [${countSmaller(nums)}] .
+`);                    // Output: [0]
   
-  // Example 3
-  console.log(countSmaller([-1, -1]));
-  // Output: [0, 0]
-  
+
+// Example - 03 :
+var nums = [-1,-1];
+console.log(`
+The Number of Smaller Elements to the right of given array [${nums}] are : [${countSmaller(nums)}] .
+`);                    // Output: [0,0]
