@@ -5,7 +5,7 @@ class ListNode {
     }
   }
   
-  function mergeKLists(lists) {
+  var mergeKLists = function (lists) {
     const minHeap = new MinHeap();
   
     for (let list of lists) {
@@ -29,7 +29,7 @@ class ListNode {
     }
   
     return dummy.next;
-  }
+  };
   
   class MinHeap {
     constructor() {
