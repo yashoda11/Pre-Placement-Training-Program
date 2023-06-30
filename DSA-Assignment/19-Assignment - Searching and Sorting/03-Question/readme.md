@@ -1,5 +1,5 @@
 # **Assignment Questions - 19**
-## **Question - 01** 
+## **Question - 03** 
 ## **Sort an Array**
 
 Given an array of integers `nums`, sort the array in ascending order and return it.
@@ -34,8 +34,8 @@ Note that the values of nums are not necessairly unique.
 
 **Output :**
 - The outputs for the given example cases are as follows:
-    - **Example - 01 :** For the input [5, 2, 3, 1], the sorted array is [1, 2, 3, 5].
-    - **Example - 02 :** For the input [5, 1, 1, 2, 0, 0], the sorted array is [0, 0, 1, 1, 2, 5].
+    - **Example - 01 :** For the input **[5, 2, 3, 1]**, the sorted array is **[1, 2, 3, 5]**.
+    - **Example - 02 :** For the input **[5, 1, 1, 2, 0, 0]**, the sorted array is **[0, 0, 1, 1, 2, 5]**.
 
 **Time and Space Complexity :**
 - The Merge Sort algorithm has a 
