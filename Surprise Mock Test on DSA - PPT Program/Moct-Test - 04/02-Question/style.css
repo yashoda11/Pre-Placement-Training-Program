@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1440px;
+    margin: auto;
+    background-color: #dff9fb;
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+    color: #be2edd;
+}
+form{
+    font-size: 22px;
+    line-height: 50px;
+    border: 2px solid #fbc531;
+    width: 480px;
+    margin: 60px 0px 0px 475px;
+    padding: 30px 30px;
+    color: #E03B8B;
+}
+input {
+    padding: 5px 15px;
+}
+.color, .date{
+    width: 200px;
+    font-size: 20px;
+    color: #8D3DAF;
+}
+.gender {
+    color: #8D3DAF;
+}
+.color{
+    padding: 2px 18px;
+}
