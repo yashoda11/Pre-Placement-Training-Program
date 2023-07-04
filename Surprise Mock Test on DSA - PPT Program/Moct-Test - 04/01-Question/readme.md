@@ -16,8 +16,7 @@
 **1.  CSS Static Position Property –**
 - This is the default positioning of the HTML element and it is not affected by the top, bottom, left, right, and z-index properties.
 - An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page.
-- **Example for Static Position is :**
-- [Static Position](https://github.com/yashoda11/Pre-Placement-Training-Program/tree/main/Surprise%20Mock%20Test%20on%20DSA%20-%20PPT%20Program/Moct-Test%20-%2004/01-Question/01-Static-Position)
+- **[Example for Static Position is :]**(https://github.com/yashoda11/Pre-Placement-Training-Program/tree/main/Surprise%20Mock%20Test%20on%20DSA%20-%20PPT%20Program/Moct-Test%20-%2004/01-Question/01-Static-Position)
 
 **2. CSS Absolute Position Property –**
 - Absolute positioning is used to position an element relative to the first parent element that has a position other than static. If no such element is found, the containing block is HTML.
