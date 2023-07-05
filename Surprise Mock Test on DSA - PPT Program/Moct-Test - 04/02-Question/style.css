@@ -37,3 +37,28 @@ input {
 .color{
     padding: 2px 18px;
 }
+.button{
+    margin-left: 95px;
+    margin-top: 28px;
+    margin-bottom: 18px;
+    display: flex;
+    gap: 40px;
+}
+.btn{
+    padding: 10px 25px;
+    font-size: 18px;
+    background-color: #3DBE29;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+#btn2{
+    background-color: #FF6263;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+.btn:hover, #btn2:hover{
+    cursor: pointer;
+    background-color: #E03B8B;
+    color: #fff;
+
+}
