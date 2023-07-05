@@ -1,6 +1,6 @@
 # **Assignment Questions - 19**
 ## **Question - 07** 
-## **Intersection of Two Arrays**
+## **Intersection of Two Arrays I**
 
 Given two integer arrays `nums1` and `nums2`, return *an array of their intersection*. Each element in the result must be **unique** and you may return the result in **any order**.
 
@@ -30,4 +30,6 @@ Explanation: [4,9] is also accepted.
 - The **Time Complexity** of the solution is **O(n + m)**, where n and m are the lengths of nums1 and nums2, respectively.
 - The **Space Complexity** of the solution is **O(min(n, m))**, where n and m are the lengths of nums1 and nums2, respectively.
 - In the given provided solution, we create a set to store the unique elements from nums1. 
-- The size of the set will be at most the length of nums1, so the space complexity of creating the set is O(n). Additionally, we create an array intersectionArr to store the intersection elements, which can have a maximum size of min(n, m) if all elements in nums2 are unique and present in nums1. Therefore, the space complexity for intersectionArr is O(min(n, m)).
+- The size of the set will be at most the length of nums1, so the space complexity of creating the set is O(n).
+- Additionally, we create an array intersectionArr to store the intersection elements, which can have a maximum size of min(n, m) if all elements in nums2 are unique and present in nums1. 
+- Therefore, the space complexity for intersectionArr is O(min(n, m)).
