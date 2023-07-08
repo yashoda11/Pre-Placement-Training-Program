@@ -63,13 +63,17 @@ function printConnections(node) {
     let level = "";
     let temp = current;
     while (temp !== null) {
-      level += temp.val;
-      if (temp.next !== null) {
-        level += " → ";
-      }
+      level += temp.val + " → ";
       temp = temp.next;
     }
+    level += "-1";
     console.log(level);
-    current = current.left; // Move to the next level
+    if (current.left !== null) {
+      current = current.left; // Move to the next level
+    } else if (current.right !== null) {
+      current = current.right; // Move to the next level
+    } else {
+      current = current.next; // Move to the next level
+    }
   }
 }
