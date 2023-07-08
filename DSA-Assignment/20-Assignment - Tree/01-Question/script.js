@@ -61,8 +61,7 @@ root1.right.left = new Node(6);
 root1.right.right = new Node(7);
 
 // Find the subtree with maximum sum in the first example
-console.log(`
-The Maximum Sum in the Subtree is : ${findMaxSubtreeSum(root1)} .
+console.log(`Example - 01 : \nThe Maximum Sum in the Subtree is : ${findMaxSubtreeSum(root1)} .
 `);
     
 
@@ -76,7 +75,6 @@ root2.right.left = new Node(-6);
 root2.right.right = new Node(2);
 
 // Find the subtree with maximum sum in the second example
-console.log(`
-The Maximum Sum in the Subtree is : ${findMaxSubtreeSum(root2)} .
+console.log(`Example - 02 : \nThe Maximum Sum in the Subtree is : ${findMaxSubtreeSum(root2)} .
 `);
     
