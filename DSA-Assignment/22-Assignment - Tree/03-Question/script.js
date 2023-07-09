@@ -37,7 +37,9 @@ class Node {
     }
   }
   
-  // Constructing the binary tree
+// Testing Example :
+
+  // Constructing the Binary Tree :
   const root = new Node(6);
   root.left = new Node(3);
   root.right = new Node(5);
@@ -47,6 +49,7 @@ class Node {
   root.left.right.left = new Node(7);
   root.left.right.right = new Node(4);
   
-  // Print all root-to-leaf paths
+  // Print all root-to-leaf paths :
+
+  console.log(`For the given Binary Tree, Root to Leaf Paths are : `);
   printRootToLeafPaths(root);
-  
