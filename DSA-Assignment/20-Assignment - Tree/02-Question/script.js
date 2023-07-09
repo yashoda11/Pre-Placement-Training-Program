@@ -52,6 +52,7 @@ var formBST = function (levelOrder) {
 
 
 // Testing Example :
+
 var levelOrder = [7, 4, 12, 3, 6, 8, 1, 5, 10];
 console.log(`The Binary Search Tree (BST) from the given [${levelOrder}] level order traversal is :\nInorder Traversal of BST :`);
 var root = formBST(levelOrder);
