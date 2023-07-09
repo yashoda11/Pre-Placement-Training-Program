@@ -3,6 +3,7 @@
 
 Construct the BST (Binary Search Tree) from its given level order traversal.
 
+```
 **Example :**
 
 **Input :** arr[] = {7, 4, 12, 3, 6, 8, 1, 5, 10}
@@ -22,6 +23,7 @@ Construct the BST (Binary Search Tree) from its given level order traversal.
    /    /     \
 
  1    5      10
+ ```
 
  **Explanation :**
 - The code defines a Node class to represent a node in a binary tree. 
