@@ -59,12 +59,12 @@ The given arr[] does not represent the level order traversal of a BST.
         - If the right child of the current node is null, create a new node with the current element and assign it as the right child.
         - If the right child already exists, update the current node to its right child and continue searching.
       - If the current element is equal to the value of the current node (arr[i] === current.val), it is a duplicate value, and the array cannot represent a valid BST. Return false.
-  - After the loop ends, the BST has been constructed.
-  - Perform a level order traversal of the BST to check if it matches the given array:
-    - const levelOrder = [] and const queue = []: Initialize an empty array for storing the level order traversal and a queue for performing BFS.
-    - queue.push(root): Enqueue the root node.
-    - While the queue is not empty, dequeue a node (const current = queue.shift()) and add its value to the levelOrder array. Enqueue its left and right children if they exist.
-  - Compare the levelOrder array with the given array (arr) to check if they match element by element. If any element differs, return a message stating that the given array cannot represent the level order traversal of a BST.
-  - If all elements match, return a message stating that the given array can represent the level order traversal of a BST.
+   - After the loop ends, the BST has been constructed.
+   - Perform a level order traversal of the BST to check if it matches the given array:
+      - const levelOrder = [] and const queue = []: Initialize an empty array for storing the level order traversal and a queue for performing BFS.
+      - queue.push(root): Enqueue the root node.
+      - While the queue is not empty, dequeue a node (const current = queue.shift()) and add its value to the levelOrder array. Enqueue its left and right children if they exist.
+   - Compare the levelOrder array with the given array (arr) to check if they match element by element. If any element differs, return a message stating that the given array cannot represent the level order traversal of a BST.
+   - If all elements match, return a message stating that the given array can represent the level order traversal of a BST.
 3. Example test cases : 
-  - The code includes two example test cases (console.log(canRepresentBST(...))) to demonstrate how to use the canRepresentBST function.
+   - The code includes two example test cases (console.log(canRepresentBST(...))) to demonstrate how to use the canRepresentBST function.
