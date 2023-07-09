@@ -1,9 +1,11 @@
 # **Assignment Questions - 21**
 ## **Question - 02**
 
+
 Given a Binary Search Tree with all unique values and two keys. 
 - Find the distance between two nodes in BST. 
 - The given keys always exist in BST.
+
 
 **Examples :**
 
@@ -33,6 +35,7 @@ node - 2 = 4
 Output - 02 :
 The distance between the two keys = 2
 ```
+
 
 **Explanation :**
 - To find the distance between two nodes in a Binary Search Tree (BST), we can follow these steps:

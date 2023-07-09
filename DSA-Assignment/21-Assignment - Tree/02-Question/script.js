@@ -77,9 +77,10 @@ class TreeNode {
   }
   
 
-// testing Examples :
+// Testing Examples :
 
 // Example - 01 :
+
   var bst = new BST();
   var values = [8, 3, 1, 6, 4, 7, 10, 14, 13];
   values.forEach((value) => bst.insert(value));
@@ -91,6 +92,7 @@ class TreeNode {
 
   
 // Example - 02 :
+
   var bst = new BST();
   var values = [8, 3, 1, 6, 4, 7, 10, 14, 13];
   values.forEach((value) => bst.insert(value));
@@ -99,3 +101,4 @@ class TreeNode {
   console.log(`
   The Distance between the given two nodes(keys) ${node1.val} and ${node2.val} for the given BST [${values}] values is : ${bst.findDistance(node1, node2)}
   `);
+  
