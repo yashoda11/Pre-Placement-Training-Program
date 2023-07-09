@@ -1,9 +1,11 @@
 # **Assignment Questions - 21**
 ## **Question - 01**
 
-You are given a binary tree. The binary tree is represented using the TreeNode class. 
+You are given a binary tree. 
+- The binary tree is represented using the TreeNode class. 
 - Each TreeNode has an integer value and left and right children, represented using the TreeNode class itself. 
 - Convert this binary tree into a binary search tree.
+
 
 ```
 Example :
@@ -32,6 +34,7 @@ Output :
 
 2      7
 ```
+
 
 **Explanation :**
 - The given code represents a solution to convert a binary tree into a binary search tree (BST). 
