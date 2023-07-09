@@ -49,6 +49,7 @@ function findMaxSubtreeSum(root) {
 }
 
 
+
 // Testing Examples :
 
 // Example - 01 : Create the binary tree for the first example
@@ -65,7 +66,7 @@ console.log(`Example - 01 : \nThe Maximum Sum in the Subtree is : ${findMaxSubtr
 `);
     
 
-// Example - 02 : Create the binary tree for the second example 
+// Example - 02 : Create the binary tree for the second example :
 let root2 = new Node(1);
 root2.left = new Node(-2);
 root2.right = new Node(3);
@@ -74,7 +75,6 @@ root2.left.right = new Node(5);
 root2.right.left = new Node(-6);
 root2.right.right = new Node(2);
 
-// Find the subtree with maximum sum in the second example
+// Find the subtree with maximum sum in the second example :
 console.log(`Example - 02 : \nThe Maximum Sum in the Subtree is : ${findMaxSubtreeSum(root2)} .
 `);
-    
