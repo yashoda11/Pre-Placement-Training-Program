@@ -76,25 +76,26 @@ class TreeNode {
     }
   }
   
-  // Example 1
-  const bst1 = new BST();
-  const values1 = [8, 3, 1, 6, 4, 7, 10, 14, 13];
-  values1.forEach((value) => bst1.insert(value));
-  const node1_1 = new TreeNode(6);
-  const node2_1 = new TreeNode(14);
-  console.log(
-    "Output 1: The distance between the two keys =",
-    bst1.findDistance(node1_1, node2_1)
-  );
+
+// testing Examples :
+
+// Example - 01 :
+  var bst = new BST();
+  var values = [8, 3, 1, 6, 4, 7, 10, 14, 13];
+  values.forEach((value) => bst.insert(value));
+  var node1 = new TreeNode(6);
+  var node2 = new TreeNode(14);
+  console.log(`
+  The Distance between the given two nodes(keys) ${node1.val} and ${node2.val} for the given BST [${values}] values is : ${bst.findDistance(node1, node2)}
+  `);
+
   
-  // Example 2
-  const bst2 = new BST();
-  const values2 = [8, 3, 1, 6, 4, 7, 10, 14, 13];
-  values2.forEach((value) => bst2.insert(value));
-  const node1_2 = new TreeNode(3);
-  const node2_2 = new TreeNode(4);
-  console.log(
-    "Output 2: The distance between the two keys =",
-    bst2.findDistance(node1_2, node2_2)
-  );
-  
+// Example - 02 :
+  var bst = new BST();
+  var values = [8, 3, 1, 6, 4, 7, 10, 14, 13];
+  values.forEach((value) => bst.insert(value));
+  var node1 = new TreeNode(3);
+  var node2 = new TreeNode(4);
+  console.log(`
+  The Distance between the given two nodes(keys) ${node1.val} and ${node2.val} for the given BST [${values}] values is : ${bst.findDistance(node1, node2)}
+  `);
