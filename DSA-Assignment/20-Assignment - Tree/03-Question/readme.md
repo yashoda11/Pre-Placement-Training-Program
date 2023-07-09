@@ -46,6 +46,6 @@ The given arr[] does not represent the level order traversal of a BST.
 **Analysis :**
 1. class TreeNode: This is a class representing a node in the binary tree. Each node has a value (val), and references to its left and right child nodes (left and right). This class is used to construct the BST.
 2. canRepresentBST(arr): This is the main function that takes an array (arr) as input and checks if it can represent the level order traversal of a BST.
-  - const n = arr.length;: Get the length of the given array.
-  - if (n === 0): Check if the array is empty. If it is, return true because an empty array represents an empty BST.
-  - const root = new TreeNode(arr[0]);: Create the root node of the BST using the first element of the array.
+   - const n = arr.length;: Get the length of the given array.
+   - if (n === 0): Check if the array is empty. If it is, return true because an empty array represents an empty BST.
+   - const root = new TreeNode(arr[0]);: Create the root node of the BST using the first element of the array.
