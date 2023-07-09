@@ -1,61 +1,58 @@
-class TreeNode {
-    constructor(value) {
-      this.val = value;
-      this.left = null;
-      this.right = null;
-    }
+// class representing node of a binary tree
+class Node {
+  constructor(data) {
+    this.data = data;
+    this.left = null;
+    this.right = null;
+  }
+}
+
+// function to print in order traversal of a binary tree
+var inorder = function (root) {
+  if (root !== null) {
+    inorder(root.left);
+    process.stdout.write(root.data + " ");
+    inorder(root.right);
+  }
+};
+
+var attachNode = function (root, value) {
+  // if root is null, make the current element as root
+  if (root === null) {
+    root = new Node(value);
+    return root;
   }
   
-  var constructBSTFromLevelOrder = function(arr) {
-    if (arr.length === 0) {
-      return null;
-    }
+  // if element is less than root
+  if (value < root.data) {
+    // attach it to left subtree
+    root.left = attachNode(root.left, value);
+  } else {
+    // attach it to right subtree
+    root.right = attachNode(root.right, value);
+  }
   
-    let root = new TreeNode(arr[0]);
-    let queue = [root];
-    let i = 1;
+  // return root
+  return root;
+};
+
+var formBST = function (levelOrder) {
+  // initialize root as null
+  let root = null;
   
-    while (i < arr.length) {
-      let currentNode = queue.shift();
+  // for each element attach the node to required position in the BST
+  for (let i = 0; i < levelOrder.length; i++) {
+    // Step 3 to 5
+    root = attachNode(root, levelOrder[i]);
+  }
   
-      if (arr[i] < currentNode.val) {
-        currentNode.left = new TreeNode(arr[i]);
-        queue.push(currentNode.left);
-        i++;
-      }
-  
-      if (i < arr.length && arr[i] > currentNode.val) {
-        currentNode.right = new TreeNode(arr[i]);
-        queue.push(currentNode.right);
-        i++;
-      }
-    }
-  
-    return root;
-  };
-  
-  var printLevelOrder = function(root) {
-    if (root === null) {
-      return;
-    }
-  
-    let queue = [root];
-  
-    while (queue.length > 0) {
-      let node = queue.shift();
-      process.stdout.write(node.val + " ");
-  
-      if (node.left !== null) {
-        queue.push(node.left);
-      }
-  
-      if (node.right !== null) {
-        queue.push(node.right);
-      }
-    }
-  };
-  
-// testing Examples :
-  let arr = [7, 4, 12, 3, 6, 8, 1, 5, 10];
-  console.log(`The Binary Search Tree \nfrom the given [${arr}] level order traversal is :`);
-  printLevelOrder(constructBSTFromLevelOrder(arr))
+  // return root
+  return root;
+};
+
+
+// Testing Example :
+var levelOrder = [7, 4, 12, 3, 6, 8, 1, 5, 10];
+console.log(`The Binary Search Tree (BST) from the given [${levelOrder}] level order traversal is :\nInorder Traversal of BST :`);
+var root = formBST(levelOrder);
+inorder(formBST(levelOrder));
