@@ -2,7 +2,7 @@
 ## **Question - 03**
 
 Given an array of size n. 
-- The problem is to check whether the given array can represent the level order traversal of a Binary Search Tree or not.
+- The problem is to check whether the given array can represent the level order traversal of a **Binary Search Tree or not**.
 
 ```
 Example - 01 :
@@ -43,31 +43,32 @@ The given arr[] does not represent the level order traversal of a BST.
 ```
 
 
-The code you provided demonstrates how to check if a given array can represent the level order traversal of a Binary Search Tree (BST). Let's break down the code step by step:
+**Analysis :**
 
-class TreeNode: This is a class representing a node in the binary tree. Each node has a value (val), and references to its left and right child nodes (left and right). This class is used to construct the BST.
-
-canRepresentBST(arr): This is the main function that takes an array (arr) as input and checks if it can represent the level order traversal of a BST.
-
-const n = arr.length;: Get the length of the given array.
-
-if (n === 0): Check if the array is empty. If it is, return true because an empty array represents an empty BST.
-
-const root = new TreeNode(arr[0]);: Create the root node of the BST using the first element of the array.
-
-for (let i = 1; i < n; i++): Iterate through the remaining elements of the array.
-
-let current = root;: Set the current node to the root.
-
-while (true): Start an infinite loop to find the appropriate position for the current element in the BST.
-
-If the current element is less than the value of the current node (arr[i] < current.val):
-
-If the left child of the current node is null, create a new node with the current element and assign it as the left child.
-If the left child already exists, update the current node to its left child and continue searching.
-If the current element is greater than the value of the current node (arr[i] > current.val):
-
-If the right child of the current node is null, create a new node with the current element and assign it as the right child.
+**1. class TreeNode :** 
+  - This is a class representing a node in the binary tree. 
+  - Each node has a value (val), and references to its left and right child nodes (left and right). 
+  - This class is used to construct the BST.
+**2. canRepresentBST(arr) :** 
+  - This is the main function that takes an array (arr) as input and checks if it can represent the level order traversal of a BST.
+  - ```const n = arr.length;``` :
+    - Get the length of the given array.
+  - ```if (n === 0)``` :
+    - Check if the array is empty. 
+      - If it is, return true because an empty array represents an empty BST.
+  - ```const root = new TreeNode(arr[0]);``` : 
+    - Create the root node of the BST using the first element of the array.
+  - ```for (let i = 1; i < n; i++)``` : 
+    - Iterate through the remaining elements of the array.
+  - ```let current = root;``` : 
+    - Set the current node to the root.
+  - ```while (true)``` : 
+    - Start an infinite loop to find the appropriate position for the current element in the BST.
+  - If the current element is less than the value of the current node (arr[i] < current.val):
+  - If the left child of the current node is null, create a new node with the current element and assign it as the left child.
+  - If the left child already exists, update the current node to its left child and continue searching.
+  - If the current element is greater than the value of the current node (arr[i] > current.val):
+  = If the right child of the current node is null, create a new node with the current element and assign it as the right child.
 If the right child already exists, update the current node to its right child and continue searching.
 If the current element is equal to the value of the current node (arr[i] === current.val), it is a duplicate value, and the array cannot represent a valid BST. Return false.
 

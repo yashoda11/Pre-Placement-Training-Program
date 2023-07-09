@@ -61,13 +61,23 @@ function canRepresentBST(arr) {
   // Check if the level order traversal matches the given array
   for (let i = 0; i < n; i++) {
     if (levelOrder[i] !== arr[i]) {
-      return `\nNo - The given array [${arr}] cannot represent the level Order Traversal of a Binary Search Tree (BST)\n`;
+      return `No - The given array [${arr}] cannot represent the level Order Traversal of a Binary Search Tree (BST)`;
     }
   }
 
-  return `\nYes - The given array [${arr}] can represent the Level Order Traversal of a Binary Search Tree (BST)\n`;
+  return `Yes - The given array [${arr}] can represent the Level Order Traversal of a Binary Search Tree (BST)`;
 }
 
-// Example test cases
-console.log(canRepresentBST([7, 4, 12, 3, 6, 8, 1, 5, 10])); // Output: true
-console.log(canRepresentBST([11, 6, 13, 5, 12, 10])); // Output: false
+// Testing Examples :
+
+// Example - 01 :
+
+var arr = [7, 4, 12, 3, 6, 8, 1, 5, 10];
+console.log(`\nExample - 01 :`);
+console.log(canRepresentBST(arr)); // Output: Yes
+
+// Example - 02 :
+console.log("\nExample - 02 :");
+var arr = [11, 6, 13, 5, 12, 10];
+console.log(canRepresentBST(arr)); // Output: No
+console.log("");
