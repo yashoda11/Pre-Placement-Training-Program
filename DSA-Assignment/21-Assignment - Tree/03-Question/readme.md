@@ -1,10 +1,12 @@
 # **Assignment Questions - 21**
 ## **Question - 03**
 
-
 Write a program to convert a binary tree to a doubly linked list.
 
+
 ```
+Example :
+
 Input :
 
         10
@@ -20,6 +22,7 @@ Input :
 Output:
 5 10 30 20 35
 ```
+
 
 **Explanation :**
 - To convert a binary tree to a doubly linked list, we can perform an in-order traversal of the tree and adjust the pointers to create the doubly linked list. 

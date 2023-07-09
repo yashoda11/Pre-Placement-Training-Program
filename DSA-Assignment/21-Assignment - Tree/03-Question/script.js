@@ -48,6 +48,8 @@ class TreeNode {
     return current;
   }
   
+  // Testing Example :
+  
   // Construct the binary tree
   const root = new TreeNode(10);
   root.left = new TreeNode(5);
