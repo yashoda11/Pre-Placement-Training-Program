@@ -59,7 +59,7 @@ class TreeNode {
   const head = convertToDoublyLinkedList(root);
   
   // Print the doubly linked list
-  console.log("Output:");
+  console.log(`After converting a Binary Tree to a Doubly Linked List. \nThe Doubly Linked List is : `);
   printDoublyLinkedList(head);
   
   function printDoublyLinkedList(head) {
@@ -70,4 +70,3 @@ class TreeNode {
     }
     console.log();
   }
-  
