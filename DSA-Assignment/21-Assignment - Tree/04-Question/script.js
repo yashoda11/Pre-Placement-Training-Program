@@ -3,7 +3,7 @@ class TreeNode {
     this.val = value;
     this.left = null;
     this.right = null;
-    this.next = null; // "next" pointer to connect nodes at the same level
+    this.next = null;    // "next" pointer to connect nodes at the same level
   }
 }
 
@@ -44,7 +44,6 @@ function connectNodesAtSameLevel(root) {
 // Testing Example :
 
 // Construct the Binary Tree :
-
 const root = new TreeNode(1);
 root.left = new TreeNode(2);
 root.right = new TreeNode(3);
@@ -54,12 +53,10 @@ root.right.left = new TreeNode(6);
 root.right.right = new TreeNode(7);
 
 // Connect nodes at the same level :
-
 connectNodesAtSameLevel(root);
 
 // Print the connections :
-
-console.log("Connections between the Nodes at the Same Level :");
+console.log("Connections between the Nodes at the Same Levels are :");
 printConnections(root);
 
 function printConnections(node) {
