@@ -63,13 +63,14 @@ root.left.right = new Node(5);
 root.right.left = new Node(6);
 root.right.right = new Node(7);
 
-  console.log("Level Order Traversal of the given tree is :");
+  console.log("\nExample - 01 : \nLevel Order Traversal of the given Binary Tree is :");
   printLevelOrder(root);
   
   var flippedRoot = flipBinaryTree(root);
   
-  console.log("Level Order Traversal of Flipped Tree");
+  console.log("\nLevel Order Traversal of Flipped Tree is :");
   printLevelOrder(flippedRoot);
+  console.log("\n-----------------------------------");
   
 
 // Example - 02 :
@@ -81,13 +82,14 @@ root.right = new Node(3);
 root.right.left = new Node(4);
 root.right.right = new Node(5);
 
-  console.log("Level Order Traversal of the given tree is :");
+  console.log("\nExample - 02 : \nLevel Order Traversal of the given Binary Tree is :");
   printLevelOrder(root);
   
   var flippedRoot = flipBinaryTree(root);
   
-  console.log("Level Order Traversal of Flipped Tree");
+  console.log("\nLevel Order Traversal of Flipped Tree is :");
   printLevelOrder(flippedRoot);
+  console.log(" ");
 
 
 
