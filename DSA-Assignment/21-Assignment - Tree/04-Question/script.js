@@ -41,7 +41,10 @@ function connectNodesAtSameLevel(root) {
   }
 }
 
-// Construct the binary tree
+// Testing Example :
+
+// Construct the Binary Tree :
+
 const root = new TreeNode(1);
 root.left = new TreeNode(2);
 root.right = new TreeNode(3);
@@ -50,30 +53,25 @@ root.left.right = new TreeNode(5);
 root.right.left = new TreeNode(6);
 root.right.right = new TreeNode(7);
 
-// Connect nodes at the same level
+// Connect nodes at the same level :
+
 connectNodesAtSameLevel(root);
 
-// Print the connections
-console.log("Output:");
+// Print the connections :
+
+console.log("Connections between the Nodes at the Same Level :");
 printConnections(root);
 
 function printConnections(node) {
-  let current = node;
-  while (current !== null) {
+  while (node !== null) {
+    let current = node;
     let level = "";
-    let temp = current;
-    while (temp !== null) {
-      level += temp.val + " → ";
-      temp = temp.next;
+    while (current !== null) {
+      level += current.val + " → ";
+      current = current.next;
     }
     level += "-1";
     console.log(level);
-    if (current.left !== null) {
-      current = current.left; // Move to the next level
-    } else if (current.right !== null) {
-      current = current.right; // Move to the next level
-    } else {
-      current = current.next; // Move to the next level
-    }
+    node = node.left; // Move to the next level
   }
 }
