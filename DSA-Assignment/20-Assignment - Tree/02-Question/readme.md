@@ -58,7 +58,7 @@ BST:
 
 
 **Time Complexity :**
-The **Time Complexity** of constructing the **BST** from the **level-order traversal** is **O(n log n)**, where n is the number of elements in the level-order array.
+- The **Time Complexity** of constructing the **BST** from the **level-order traversal** is **O(n log n)**, where n is the number of elements in the level-order array.
 - The **attachNode()** function has a **time complexity** of **O(log n)** in the average case since it performs a binary search on the BST to find the appropriate position for the new node.
 - In the formBST() function, the attachNode() function is called for each element in the level-order array, resulting in a total time complexity of O(n log n).
 - The **inorder()** function, which performs an in-order traversal, has a **time complexity** of **O(n)** since it visits each node once.
