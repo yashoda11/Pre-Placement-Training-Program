@@ -6,7 +6,7 @@ class Node {
     }
   }
   
-  function areTraversalsSame(preorder, inorder, postorder) {
+var areTraversalsSame =  function (preorder, inorder, postorder) {
     if (preorder.length === 0 && inorder.length === 0 && postorder.length === 0) {
       return true;
     }
@@ -35,19 +35,40 @@ class Node {
     }
   
     return false;
-  }
+  };
   
-  // Example 1
-  const inorder1 = [4, 2, 5, 1, 3];
-  const preorder1 = [1, 2, 4, 5, 3];
-  const postorder1 = [4, 5, 2, 3, 1];
   
-  console.log(areTraversalsSame(preorder1, inorder1, postorder1));
   
-  // Example 2
-  const inorder2 = [4, 2, 5, 1, 3];
-  const preorder2 = [1, 5, 4, 2, 3];
-  const postorder2 = [4, 1, 2, 3, 5];
+// Testing Examples :
+
+// Example - 01 :
+
+  var inorder = [4, 2, 5, 1, 3];
+  var preorder = [1, 2, 4, 5, 3];
+  var postorder = [4, 5, 2, 3, 1];
   
-  console.log(areTraversalsSame(preorder2, inorder2, postorder2));
+  console.log(`
+  Example - 01 : 
+
+  In-Order is : [${inorder}] ,
+  Pre-Order is : [${preorder}],
+  Post-Order is : [${postorder}] ,
+  The Output is : ${areTraversalsSame(preorder, inorder, postorder)}
+  `);
   
+
+
+// Example - 02 :
+
+  var inorder = [4, 2, 5, 1, 3];
+  var preorder = [1, 5, 4, 2, 3];
+  var postorder = [4, 1, 2, 3, 5];
+  
+  console.log(`
+  Example - 02 : 
+
+  In-Order is : [${inorder}] ,
+  Pre-Order is : [${preorder}] ,
+  Post-Order is : [${postorder}] ,
+  The Output is : ${areTraversalsSame(preorder, inorder, postorder)}
+  `);
