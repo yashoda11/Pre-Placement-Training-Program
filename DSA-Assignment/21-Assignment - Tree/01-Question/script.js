@@ -80,5 +80,5 @@ root.left.right = new Node(4);
 
 binaryTreeToBST(root);
 
-console.log("Following is the Inorder Traversal of the converted BST : ");
+console.log("The Inorder Traversal of the converted BST : ");
 printInorder(root);
