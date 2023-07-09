@@ -90,12 +90,3 @@ root.right.right = new Node(5);
   console.log("\nLevel Order Traversal of Flipped Tree is :");
   printLevelOrder(flippedRoot);
   console.log(" ");
-
-
-
-
-
-
-
-
-  
