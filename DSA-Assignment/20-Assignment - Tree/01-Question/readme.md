@@ -3,9 +3,10 @@
 
 Given a binary tree, your task is to find subtree with maximum sum in tree.
 
-**Example - 01 :**
+```
+Example - 01 :
 
-**Input - 01 :**      
+Input - 01 :      
 
        1
 
@@ -17,14 +18,17 @@ Given a binary tree, your task is to find subtree with maximum sum in tree.
 
 4   5  6   7
 
-**Output - 01 : 28**
+Output - 01 : 28
 
-**Explanation :**
+Explanation :
 As all the tree elements are positive, the largest subtree sum is equal to sum of all tree elements.
+```
 
-**Example - 02 :**
 
-**Input- 02 :**
+```
+Example - 02 :
+
+Input- 02 :
 
        1
 
@@ -36,7 +40,7 @@ As all the tree elements are positive, the largest subtree sum is equal to sum o
 
 4   5  -6   2
 
-**Output - 02 : 7**
+Output - 02 : 7
 
 Subtree with largest sum is :
 
@@ -46,8 +50,10 @@ Subtree with largest sum is :
 
 4   5
 
-**Explanation :**
+Explanation :
 Also, entire tree sum is also 7.
+```
+
 
 **Explanation :**
 - The code defines a Node class to represent the nodes of the binary tree. 
