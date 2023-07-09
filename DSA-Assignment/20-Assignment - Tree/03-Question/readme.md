@@ -50,15 +50,15 @@ The given arr[] does not represent the level order traversal of a BST.
    - if (n === 0): Check if the array is empty. If it is, return true because an empty array represents an empty BST.
    - const root = new TreeNode(arr[0]);: Create the root node of the BST using the first element of the array.
    - for (let i = 1; i < n; i++): Iterate through the remaining elements of the array.
-    - let current = root;: Set the current node to the root.
-    - while (true): Start an infinite loop to find the appropriate position for the current element in the BST.
-      - If the current element is less than the value of the current node (arr[i] < current.val):
-        - If the left child of the current node is null, create a new node with the current element and assign it as the left child.
-        - If the left child already exists, update the current node to its left child and continue searching.
-      - If the current element is greater than the value of the current node (arr[i] > current.val):
-        - If the right child of the current node is null, create a new node with the current element and assign it as the right child.
-        - If the right child already exists, update the current node to its right child and continue searching.
-      - If the current element is equal to the value of the current node (arr[i] === current.val), it is a duplicate value, and the array cannot represent a valid BST. Return false.
+     - let current = root;: Set the current node to the root.
+     - while (true): Start an infinite loop to find the appropriate position for the current element in the BST.
+       - If the current element is less than the value of the current node (arr[i] < current.val):
+         - If the left child of the current node is null, create a new node with the current element and assign it as the left child.
+         - If the left child already exists, update the current node to its left child and continue searching.
+       - If the current element is greater than the value of the current node (arr[i] > current.val):
+         - If the right child of the current node is null, create a new node with the current element and assign it as the right child.
+         - If the right child already exists, update the current node to its right child and continue searching.
+       - If the current element is equal to the value of the current node (arr[i] === current.val), it is a duplicate value, and the array cannot represent a valid BST. Return false.
    - After the loop ends, the BST has been constructed.
    - Perform a level order traversal of the BST to check if it matches the given array:
       - const levelOrder = [] and const queue = []: Initialize an empty array for storing the level order traversal and a queue for performing BFS.
