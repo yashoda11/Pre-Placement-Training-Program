@@ -34,10 +34,11 @@ Output :
 ```
 
 **Explanation :**
-1. The given code represents a solution to convert a binary tree into a binary search tree (BST). Let's go through the explanation of the code :
-2. The Node class represents a node in the binary tree. It has three properties: data to store the node's value, left to store the left child, and right to store the right child.
-3. The index variable is declared to keep track of the current index while performing operations on the array representation of the binary tree.
-4. The storeInorder function performs an inorder traversal of the binary tree and stores the values in the inorder array. It uses recursion to traverse the left subtree, store the current node's value, and then traverse the right subtree.
+- The given code represents a solution to convert a binary tree into a binary search tree (BST). 
+- Let's go through the explanation of the code :
+  1. The Node class represents a node in the binary tree. It has three properties: data to store the node's value, left to store the left child, and right to store the right child.
+  2. The index variable is declared to keep track of the current index while performing operations on the array representation of the binary tree.
+  3. The storeInorder function performs an inorder traversal of the binary tree and stores the values in the inorder array. It uses recursion to traverse the left subtree, store the current node's value, and then traverse the right subtree.
 5. The countNodes function recursively counts the number of nodes in the binary tree. It returns 0 for a null node and counts the nodes in the left and right subtrees by recursion.
 6. The arrayToBST function takes the arr (inorder traversal of the binary tree) and assigns the values to the binary search tree in a sorted manner. It uses recursion to assign the values to the left subtree, the current node, and then the right subtree.
 7. The binaryTreeToBST function is the main function that converts the given binary tree to a binary search tree. It calculates the number of nodes in the tree, creates an array to store the inorder traversal, performs the inorder traversal to populate the array, sorts the array, and assigns the values back to the binary tree using the arrayToBST function.
