@@ -42,19 +42,20 @@ BST:
 - The algorithm used in the code constructs a binary search tree (BST) from its level-order traversal.
   1. Define a Node class to represent a node in the BST with properties data, left, and right.
   2. Implement the attachNode() function:
-    - If the root is null, create a new node with the given value and assign it to the root.
-    - If the value is less than the root's data, recursively attach the node to the left subtree.
-    - If the value is greater than or equal to the root's data, recursively attach the node to the right subtree.
-    - Return the root.
+      - If the root is null, create a new node with the given value and assign it to the root.
+      - If the value is less than the root's data, recursively attach the node to the left subtree.
+      - If the value is greater than or equal to the root's data, recursively attach the node to the right subtree.
+      - Return the root.
   3. Implement the formBST() function:
-    - Initialize the root as null.
-    - Iterate over the elements in the levelOrder array.
-    - For each element, call the attachNode() function to attach a new node with the element's value to the BST using the root as the starting point.
-    - Return the root of the constructed BST.
+      - Initialize the root as null.
+      - Iterate over the elements in the levelOrder array.
+      - For each element, call the attachNode() function to attach a new node with the element's value to the BST using the root as the starting point.
+      - Return the root of the constructed BST.
   4. In the main() function:
-    - Create examples by providing different levelOrder arrays.
-    - Call the formBST() function for each example to construct the corresponding BST.
-    - Call the inorder() function to print the nodes of each BST in in-order traversal.
+      - Create examples by providing different levelOrder arrays.
+      - Call the formBST() function for each example to construct the corresponding BST.
+      - Call the inorder() function to print the nodes of each BST in in-order traversal.
+
 
 **Time Complexity :**
 The **Time Complexity** of constructing the **BST** from the **level-order traversal** is **O(n log n)**, where n is the number of elements in the level-order array.
@@ -63,7 +64,7 @@ The **Time Complexity** of constructing the **BST** from the **level-order trave
 - The **inorder()** function, which performs an in-order traversal, has a **time complexity** of **O(n)** since it visits each node once.
 - Therefore, the overall **Time Complexity** of the code is dominated by the construction of the BST, resulting in a time complexity of **O(n log n)**.
 
-S**pace Complexity :**
+**Space Complexity :**
 - The **space complexity** of the code is determined by the space used for the **recursion stack** and the **space** required to store the BST.
 - In the **attachNode()** function, the **space** used by the **recursion stack** is **O(log n)** in the average case, corresponding to the height of the BST.
 - The space required to store the BST depends on the number of nodes in the tree. 
