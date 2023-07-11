@@ -37,8 +37,8 @@ var nthUglyNumber = function (n) {
 var n = 10;
 console.log(`
 Example - 01 :
-For the Given an Integer ${n} ,
-The ${n}th Ugly Numbers is : ${nthUglyNumber(n)} .
+For the Given an Integer (n) is : ${n} ,
+The ${n}th (nth) Ugly Numbers is : ${nthUglyNumber(n)} .
 `);
 
 // Example - 02 :
@@ -46,6 +46,6 @@ The ${n}th Ugly Numbers is : ${nthUglyNumber(n)} .
 var n = 1;
 console.log(`
 Example - 02 :
-For the Given an Integer ${n} ,
-The ${n}th Ugly Numbers is : ${nthUglyNumber(n)} .
+For the Given an Integer (n) is : ${n} ,
+The ${n}th (nth) Ugly Numbers is : ${nthUglyNumber(n)} .
 `);
