@@ -7,27 +7,28 @@
 **Answer :**
 
 **Semantic Tags :**
-
 - A Semantic tag clearly describes its meaning to both the browser and the developer. 
-
 - **For Example :**
     - In **Non-Semantic elements** like `<div>` and `<span>` they **tell nothing** about its **content**.
-
 - **For Example :**
     - In **Semantic elements** like `<form>`, `<table>` and `<article>` **clearly** defines its **content**.
-
-- The following **Semantic tags** in **HTML** can be used to break our page into identified parts.
-    **1. `<header>` :**
+- The following **Semantic tags** in **HTML** can be used to break our page into identified parts :
+    1. `<header>` :
         - It defines a header of a web page.
-    **2. `<nav >` :**
+    
+    **2. `<nav>` :**
         - It defines a container for navigation links.
-    **3. <section> :**
+
+    **3.`<section>` :**
         - This defines a section in a webpage.
-    **4. <article> :**
+
+    **4.`<article>` :**
         - This element contains the main part, containing the information about the webpage.
-    **5. <aside> :**
+
+    **5.`<aside>` :**
         - This content is often placed as a sidebar in a document.
-    **6. <footer> :**
+
+    **6.`<footer>` :**
         - It defines a footer for a document or a section. 
 
 **Use of Semantic Tags :**
