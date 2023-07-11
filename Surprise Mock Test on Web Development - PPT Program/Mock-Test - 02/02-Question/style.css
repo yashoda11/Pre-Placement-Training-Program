@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: auto;
+    max-width: 1440px;
+}
+
+#inputBox{
+    padding: 20px 20px;
+    margin: 100px 0px 0px 100px ;
+    font-size: 20px;
+    border: 2px solid greenyellow;
+}
+#submitButtom{
+    padding: 10px 15px;
+    font-size: 20px;
+    background-color: greenyellow;
+    border: none;
+    border-radius: 10px;
+}
+#listItems{
+    margin: 100px 0px 0px 100px ;
+    font-size: 30px;
+    color: blue;
+}
