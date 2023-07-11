@@ -46,6 +46,7 @@ Explanation :
 - The code has a **Time Complexity** of **O(n)**, where n is the length of the input string s. 
 - This is because it iterates through the string once with the end pointer, and at each iteration, it performs constant-time operations.
 
-**Space Complexity :** The **Space Complexity** is **O(min(m, n))**, where m is the size of the character set (number of unique characters) and n is the length of the input string s. 
+**Space Complexity :** 
+- The **Space Complexity** is **O(min(m, n))**, where m is the size of the character set (number of unique characters) and n is the length of the input string s. 
 - In the **worst case**, when all characters in s are unique, the space required for charMap can be up to m. 
 - However, since the character set is limited to English letters, digits, symbols, and spaces, m is a constant and can be considered as O(1) space.
