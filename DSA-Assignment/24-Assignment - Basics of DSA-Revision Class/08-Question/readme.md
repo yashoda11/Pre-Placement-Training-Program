@@ -8,6 +8,7 @@ Given a **sorted** integer array `arr`, two integers `k` and `x`, return t
     - `|a - x| < |b - x|`, or
     - `|a - x| == |b - x|` and `a < b`
 
+
 **Example - 01 :**
 ```
 Input : arr = [1,2,3,4,5], k = 4, x = 3
@@ -25,7 +26,6 @@ Output : [1,2,3,4]
 - `1 <= arr.length <= 10000`.
 - `arr` is sorted in **ascending** order.
 - -`10000 <= arr[i], x <= 10000`.
-
 
 **Explanation :**
 - The code uses a two-pointer approach to find the k closest elements to x in the sorted array. 

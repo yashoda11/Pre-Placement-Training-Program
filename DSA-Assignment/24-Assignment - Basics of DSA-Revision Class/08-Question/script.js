@@ -28,9 +28,9 @@ var k = 4;
 var x = 3;
 console.log(`
 Example - 01 :
-For the Given a Sorted Integer Array (arr) is : [${arr}] and 
+For The Given a Sorted Integer Array (arr) is : [${arr}] and 
 The Two Integers (K) ${k} and (X) ${x} ,
-The (K) ${k}th Closest Integers to (X) ${x} in the given Array is :[${findClosestElements(arr, k, x)}] .
+The ${k}th (K) Closest Integers to ${x} (X) in the given Array is :[${findClosestElements(arr, k, x)}] .
 `);
 
 // Example - 02 :
@@ -40,7 +40,7 @@ var k = 4;
 var x = -1;
 console.log(`
 Example - 02 :
-For the Given a Sorted Integer Array (arr) is : [${arr}] and 
+For The Given a Sorted Integer Array (arr) is : [${arr}] and 
 The Two Integers (K) ${k} and (X) ${x} ,
-The (K) ${k}th Closest Integers to (X) ${x} in the given Array is :[${findClosestElements(arr, k, x)}] .
+The ${k}th (K) Closest Integers to ${x} (X) in the given Array is :[${findClosestElements(arr, k, x)}] .
 `);
