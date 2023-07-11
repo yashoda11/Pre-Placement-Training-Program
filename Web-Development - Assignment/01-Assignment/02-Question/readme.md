@@ -16,6 +16,7 @@
     - In **Semantic elements** like `<form>`, `<table>` and `<article>` **clearly** defines its **content**.
     
 - The following **Semantic tags** in **HTML** can be used to break our page into identified parts :
+
     **1. `<header>` :**
         - It defines a header of a web page.
     
