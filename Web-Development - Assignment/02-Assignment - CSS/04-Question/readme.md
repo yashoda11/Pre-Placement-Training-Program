@@ -16,10 +16,10 @@
 
 **Examples :** 
 - Examples of **inline elements** are 
-    - `<span>`, 
-    - `<a>`, 
-    - `<em>`, 
-    - `<strong>`, etc.
+    - `<span>`
+    - `<a>` 
+    - `<em>` 
+    - `<strong>`
 
 **Syntax :**
 ```
@@ -40,12 +40,11 @@ height: 1000px; /* ❌ won't have any effect */
 - They respect line breaks and can create horizontal space between elements.
 - Inline-block elements flow horizontally, respect dimensions, and can create line breaks.
 
-
 **Examples :**
 - Examples of **inline-block elements** are 
-    - <img>, 
-    - <button>, 
-    - <input>, etc.
+    - `<img>`
+    - `<button>` 
+    - `<input>`
 
 **Syntax :** 
 ```
@@ -67,12 +66,11 @@ height: 1000px; /* ✅  yes, it will work */
 
 **Examples :**
 - Examples of **block-level elements** are 
-    - `<div>`, 
-    - `<p>`, 
-    - `<h1>` to 
-    - `<h6>`, 
-    - `<ul>`, 
-    - `<li>`, etc.
+    - `<div>`
+    - `<p>` 
+    - `<h1>` to `<h6>`
+    - `<ul>` 
+    - `<li>`
 
 **Syntax :**
 ```
