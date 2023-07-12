@@ -26,3 +26,28 @@
 <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
 </figure>
 ```
+
+**`<img>` tag :**
+- The `<img>` tag is a self-closing tag used to insert an image into an HTML document.
+- It is used to display a single image on a web page.
+- The `<img>` tag requires the src attribute, which specifies the URL or path to the image file.
+- It supports additional attributes such as alt, width, height, title, etc., which provide alternative text, define dimensions, and provide tooltips for the image.
+
+**Example :**
+```
+<img src="image.jpg" alt="Description of the image" width="300" height="200">
+```
+
+**`<figure>` tag :**
+- The `<figure>` tag is used to group media content, such as images, illustrations, diagrams, videos, etc., along with their captions.
+- It allows for semantic grouping of content and provides a way to associate a caption or description with the media element.
+- It is typically used when you want to display an image or other media with a caption or when you want to provide additional context or information about the media content.
+- The `<figure>` tag is often used in conjunction with the <figcaption> tag, which is used to define the caption or description for the content within the `<figure>` element.
+
+**Example :**
+```
+<figure>
+  <img src="image.jpg" alt="Description of the image" width="300" height="200">
+  <figcaption>Caption or description for the image</figcaption>
+</figure>
+```
