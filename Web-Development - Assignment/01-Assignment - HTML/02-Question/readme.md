@@ -14,6 +14,9 @@
 
 - **For Example :**
     - In **Semantic elements** like `<form>`, `<table>` and `<article>` **clearly** defines its **content**.
+
+
+![Image](https://res.cloudinary.com/practicaldev/image/fetch/s--ev2ZJ7Dz--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://uselessdivs.com/img/a-short-guide-to-help-you-pick-the-correct-html-tag/layout.svg)
     
 - The following **Semantic tags** in **HTML** can be used to break our page into identified parts :
 
