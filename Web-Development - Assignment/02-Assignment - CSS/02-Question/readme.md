@@ -7,12 +7,14 @@
 **ANSWER :**
 
 **CSS Selectors :**
+- CSS (Cascading Style Sheets) provides several types of selectors that allow you to target and style specific elements within an HTML document. 
 - CSS selectors are used to select the content we want to style.
 - Selectors are part of the CSS rule set. 
 - CSS selectors select HTML elements according to its id, class, type, attribute etc.,
+- Here are some commonly used types of CSS selectors:
 
 
-**Different types of CSS Selectors are :**
+**Different types of CSS Selectors are :** 
 1. Universal Selector
 2. Individual Selector
 3. Class Selector
