@@ -13,11 +13,15 @@
 - An HTML tag is a markup symbol or syntax used to define the structure and behavior of elements within an HTML document. 
 - Tags are enclosed in angle brackets (< >) and are placed around HTML elements to define their start and end points.
 
+![Image](https://cdn.hashnode.com/res/hashnode/image/upload/v1681747025932/7348f09c-b202-4ec2-be55-8bb85ca4313d.png?auto=compress,format&format=webp)
+
 **Example :**
 ```
 <p>This is a paragraph.</p>
 ``` 
 - In the above example, `<p>` and `</p>` are the opening and closing tags, respectively, used to define the start and end of the <p> element.
+
+![Image](https://cdn.hashnode.com/res/hashnode/image/upload/v1681230795067/0a818399-f76a-4541-ac53-f8a744ac8871.png?auto=compress,format&format=webp)
 
 
 **HTML Elements :** 
@@ -27,11 +31,19 @@
 - It represents a specific part of a web page's structure or content. 
 - Elements are made up of tags, attributes, and the content placed between the opening and closing tags.
 
+
+![Image](https://static.javatpoint.com/htmlpages/images/html-building-blocks.png)
+
+
+
 **Example :**
 ```
 <p>This is a paragraph.</p>
 ```
 In this example, `<p>` is the opening tag, `</p>` is the closing tag, and "This is a paragraph." is the content of the <p> element.
+
+
+![Image](https://cdn.hashnode.com/res/hashnode/image/upload/v1681230752962/ee98d86d-f66c-4c95-b056-205e91dceb08.png?auto=compress,format&format=webp)
 
 
 **Difference between the HTML tags and elements in the below :**
