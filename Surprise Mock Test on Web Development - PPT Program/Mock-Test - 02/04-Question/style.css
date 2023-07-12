@@ -6,11 +6,11 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
+body{
+    margin: auto;
+    max-width: 1440px;
+    background-color: #dff9fb;
 }
-
 li {
     list-style: none;
 }
@@ -67,12 +67,15 @@ a {
     color: #482ff7;
 }
 @media only screen and (max-width: 768px) {
+    body{
+        background-color: #f6e58d;
+    }
     .nav-menu {
         position: fixed;
         left: -100%;
         top: 5rem;
         flex-direction: column;
-        background-color: #fff;
+        background-color: #badc58;
         width: 100%;
         border-radius: 10px;
         text-align: center;
