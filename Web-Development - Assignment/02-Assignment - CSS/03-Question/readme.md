@@ -21,6 +21,8 @@
 
 
 **Example :**
+- The units allows us to specify sizes and positions relative to the dimensions of the viewport, providing a responsive and flexible way to design web layouts. 
+- They are particularly useful for creating fluid and adaptive designs that can adjust to different screen sizes.
 - A few examples of using vw and vh in CSS :
 ```
 .container {
