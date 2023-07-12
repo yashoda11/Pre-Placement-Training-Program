@@ -40,6 +40,8 @@
 
     **8. `<figure>` and `<figcaption>` :** 
     - Used together to group media content, such as images or videos, along with their captions.
+
+![Image](https://cdn.hashnode.com/res/hashnode/image/upload/v1681747373934/659c0abf-164e-467a-8663-4d429b5b5ea0.png?auto=compress,format&format=webp)
  
 
 **Semantic tags are important for several reasons :**
