@@ -18,3 +18,4 @@
 - This declaration tells the browser to interpret the document as HTML5 and use the appropriate rendering rules and features.
 - The doctype declaration is important because different versions of HTML have different syntax rules and features.
 - By specifying the correct doctype, you ensure that the web page is rendered consistently across different browsers and devices, and that it follows the standards set by the HTML specification.
+- It's important to include the `<!DOCTYPE html>` declaration at the beginning of every HTML document to ensure consistent rendering across different browsers and to comply with HTML standards.
