@@ -1,9 +1,11 @@
-# **Web Development Assignment - 01**
+# **Web Development - HTML**
+## **Assignment Questions - 01**
 ## **Question - 01 :**
 
-**1. `<!DOCTYPE html>` is it a tag of html? If not, what is it and why do we use it?**
+**1.  `<!DOCTYPE html>` is it a tag of html? If not, what is it and why do we use it?**
 
 **Answer :**
+
 - All HTML documents must start with a `<!DOCTYPE html>` declaration.
 - The declaration is not an HTML tag.
 - It is an "information" to the browser about what document type to expect.
