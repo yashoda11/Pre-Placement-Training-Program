@@ -48,7 +48,7 @@ z-index: unset;
 
 - **Output Image :**
 
-    - [Output Image](./Output%20Image%20-%2001.png)
+    - ![Output Image](./Output%20Image%20-%2001.png)
 
 
 **Example - 02 :**
@@ -67,4 +67,4 @@ z-index: unset;
 
 - **Output Image :**
 
-    - [Output Image](./Output%20Image%20-%2002.png)
+    - ![Output Image](./Output%20Image%20-%2002.png)
