@@ -9,6 +9,12 @@
 **1. The Inline  Elements :** 
 - The element doesn’t start on a new line and only occupies just the width it requires. 
 - We can’t set the width or height.
+- Elements with **display: inline** are displayed on the same line as their siblings, without creating line breaks.
+- Inline elements do not have a width or height property, and their dimensions are determined by their content.
+- Margins and paddings can be applied horizontally (left and right) but do not affect the vertical layout.
+
+**Examples :** 
+- Examples of inline elements are <span>, <a>, <em>, <strong>, etc.
 
 **Syntax :**
 ```
