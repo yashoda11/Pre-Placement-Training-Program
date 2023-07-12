@@ -4,14 +4,35 @@
 
 **3. Differentiate between HTML Tags and Elements?**
 
+
 **ANSWER :**
+
 
 **HTML Tag :** 
 - An **HTML Tag** surrounds the content and applies meaning to it.
+- An HTML tag is a markup symbol or syntax used to define the structure and behavior of elements within an HTML document. 
+- Tags are enclosed in angle brackets (< >) and are placed around HTML elements to define their start and end points.
+
+**Example :**
+```
+<p>This is a paragraph.</p>
+``` 
+- In the above example, `<p>` and `</p>` are the opening and closing tags, respectively, used to define the start and end of the <p> element.
+
 
 **HTML Elements :** 
 - An **HTML Element** is an individual component of an HTML file.
 - In an HTML file, everything written within tags are termed as HTML elements.
+- An HTML element consists of the opening tag, the content, and the closing tag. 
+- It represents a specific part of a web page's structure or content. 
+- Elements are made up of tags, attributes, and the content placed between the opening and closing tags.
+
+**Example :**
+```
+<p>This is a paragraph.</p>
+```
+- In this example, `<p>` is the opening tag, `</p>` is the closing tag, and "This is a paragraph." is the content of the <p> element.
+
 
 **Difference between the HTML tags and elements in the below :**
 
