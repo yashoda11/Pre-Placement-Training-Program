@@ -31,7 +31,7 @@
 ```
 <p>This is a paragraph.</p>
 ```
-- In this example, `<p>` is the opening tag, `</p>` is the closing tag, and "This is a paragraph." is the content of the <p> element.
+In this example, `<p>` is the opening tag, `</p>` is the closing tag, and "This is a paragraph." is the content of the <p> element.
 
 
 **Difference between the HTML tags and elements in the below :**
