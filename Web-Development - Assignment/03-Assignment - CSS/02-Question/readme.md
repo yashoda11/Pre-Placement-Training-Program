@@ -25,13 +25,35 @@
 
 **media-type :** 
 - It specifies the type of media for which the query is intended. 
-- The most common media types are all, screen, print, speech, and projection. 
+- The most common media types are :
+    1. all
+    2. screen
+    3. print
+    4. speech
+    5. projection. 
+        - **all :**
+            - Indicates that you want to target all devices, with no exceptions. 
+            - Used for all media-type devices.
+        - **print :**
+            - Targets devices that send output to a print display like the “Print Preview” window in a web browser.
+        - **screen :** 
+            - This is the opposite of print, targeting all devices that don’t fall under the print category.
+            - Used for computer screens, tablets, smartphones etc.
+        - **speech :** 
+            - Used for screenreaders that "reads" the page out loud.
+            - **syntax :**
+            ```
+            @media screen {
+              /* Styles! */
+            }
+
+            ```
 - The screen type is commonly used for devices with screens, while print is used for printing purposes.
 
 **condition :** 
 - It represents one or more conditions that determine when the styles inside the media query will be applied.
 - Conditions can be based on various factors like width, height, device orientation, resolution, and more. 
-- Conditions are specified inside parentheses ( ) and can be combined using logical operators such as and, not, and only.
+- Conditions are specified inside parentheses **'( )'** and can be combined using logical operators such as **and**, **not**, **and** only.
 
 **Syntax - Example :**
 
