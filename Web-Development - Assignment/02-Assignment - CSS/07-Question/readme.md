@@ -43,3 +43,13 @@
 - HTML markup and CSS will be easy to manage in this type of scenario.
 - However, when working with the overall web page layouts, CSS Grid does away with the nightmares of coding. It gives you more flexibility to move around the blocks irrespective of your HTML markup.
 - Another major difference between Flexbox and Grids is that the former works on content while the latter is based on the layout. 
+
+
+**Example Program :**
+
+**HTML Source Code :**
+[]()
+
+**CSS Source Code :**
+[]()
+![Alt text](image.png)
