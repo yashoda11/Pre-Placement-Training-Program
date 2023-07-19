@@ -8,20 +8,20 @@
 
 ## **Home Page :**
 
-![](./Home%20Page.png)
+![Home Page](./Images/Home%20Page.png)
 
 
 ## **When we want to listen Devotional Songs then click on devotional songs :**
 
-![](./Dev.png)
+![Devotional Image](./Images/Devotional%20Image.png)
 
 ## **When we want to listen Latest Songs then click on latest songs :**
 
-![](./latest.png)
+![Latest Images](./Images/latest.png)
 
 
 
 ## **When we want to listen Old Songs then click on old songs :**
 
 
-![](./old.png)
+![Old Songs](./Images/old.png)
