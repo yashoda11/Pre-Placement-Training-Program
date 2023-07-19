@@ -47,9 +47,82 @@
 
 **Example Program :**
 
-**HTML Source Code :**
-[]()
+**FLEX :**
+
+**Let’s say we want to recreate the below design in Flex :**
+
+![Image](./Images/Home%20Start%20Image.png)
+
+**HTML Source Code :** 
+
+[HTML Source Code](./Flex/index.html)
 
 **CSS Source Code :**
-[]()
-![Alt text](image.png)
+
+[CSS Source Code](./Flex/style.css)
+
+**Out Put Image :**
+
+**Output for this program is :**
+
+![Flex Image](./Images/Flex%20-%20Output%20Image.png)
+
+
+- Items will place automatically in one line and you don’t have to add anything else except `display: flex;` so the items are free to take their appropriate place.
+
+
+**Grid :** 
+
+- **Let’s see how we will achieve the same design with CSS Grids :**
+
+**HTML Source Code :**
+
+[HTML Souce Code](./Grid/index.html)
+
+- HTML Code – It is as same as the flex box.
+
+**CSS Complete Source Code :**
+
+[CSS Complete Source Code](./Grid/style.css)
+
+
+**CSS Code :**
+```
+.container{
+    margin-top: 50px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px 40px;
+    font-size: 50px;
+    gap: 30px;
+    background-color: pink;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}   
+```
+
+- It divided the wrapper into 10 columns and placed each item into those grid cells. 
+- It forced us to divide the layout into 10 columns. 
+- But this limitation was not there in the flexbox since it adjusts the items automatically.
+
+- **Then is displays as below :**
+
+  ![Image1](./Images/Output%20Image%20-%201.png)
+
+- We move forward with shifting one element (say, log out) to the extreme right.
+
+- **Here’s how we do it :**
+
+**CSS Code :**
+```
+.container > div:nth-child(3) {
+    grid-column: 10;
+}
+```
+
+**Output Image :**
+
+**Final Output for this program is :**
+
+![Output Image](./Images/Grid%20Output%20Image.png)
+
+

@@ -1,0 +1,13 @@
+.container{
+    margin-top: 50px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px 40px;
+    font-size: 50px;
+    gap: 30px;
+    background-color: pink;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}   
+.container > div:nth-child(3) {
+    grid-column: 10;
+}
