@@ -4,7 +4,8 @@
 
 **7. Create a simple Music player using html only**
 
-# **OUTPUT Images**
+# **OUTPUT - Images**
+
 
 ## **Home Page :**
 
