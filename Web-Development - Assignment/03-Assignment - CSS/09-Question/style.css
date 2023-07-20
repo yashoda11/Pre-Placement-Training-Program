@@ -9,7 +9,6 @@ body{
     margin: auto;
     font-family: 'Poppins', sans-serif;
 }
-
 @media screen and (min-width: 769px){
     footer{
         margin-top: 100px;
