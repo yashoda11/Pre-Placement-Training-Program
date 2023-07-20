@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1440px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (min-width: 769px){
+    footer{
+        margin-top: 100px;
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+        padding: 80px 140px 80px 100px;
+        font-size: 17px;
+        font-weight: 200;
+    
+    }
+    .onecard, .navigation, .support, .newsletter{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    button{
+        padding: 15px 20px;
+        font-size: 16px;
+        width: 250px;
+        border-radius: 7px;
+        border: none;
+    }
+    .btn1{
+        text-align: left;
+    }
+    .btn2{
+        background-color: #0984e3;
+    }
+}
+
+@media screen and (max-width: 768px){
+    footer{
+        margin-top: 100px;
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        padding: 80px 140px 80px 100px;
+        font-size: 17px;
+        font-weight: 200;
+    
+    }
+    .onecard, .navigation, .support, .newsletter{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    button{
+        padding: 15px 20px;
+        font-size: 16px;
+        width: 250px;
+        border-radius: 7px;
+        border: none;
+    }
+    .btn1{
+        text-align: left;
+    }
+    .btn2{
+        background-color: #0984e3;
+    }
+}
