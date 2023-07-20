@@ -8,7 +8,6 @@ body{
     max-width: 1440px;
     margin: auto;
     font-family: 'Poppins', sans-serif;
-    
 }
 nav{
     display: flex;
@@ -18,8 +17,7 @@ nav{
     margin-right: 100px;
     position: sticky;
     top: 0px;
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
 }
 nav div ul{
     display: flex;
@@ -66,7 +64,7 @@ header{
     font-weight: 500;
 }
 .header-left img{
-    width: 90px;
+    width: 70px;
 }
 .download{
     background-color: #00a8ff;
@@ -74,11 +72,8 @@ header{
     border-radius: 5px;
     gap: 20px;
     display: flex;
-    padding: 4px;
     margin-top: 20px;
     padding: 4px 10px 4px 20px;
-
-
 }
 .download img {
     margin-top: 10px;
@@ -101,4 +96,48 @@ section{
     align-items: center;
     margin-top: 90px;
     padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.Powerful, .Seamless, .OneCard{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    /* justify-content: space-around; */
+    margin: 50px 150px 60px 160px;
+}
+.Powerful-right, .metal-left, .Seamless-right, .rewards-left, .OneCard-right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: right;
+    margin-top: 100px;
+    font-size: 25px;
+    font-weight: 200;
+    width: 600px;
+}
+.metal, .rewards{
+    background-color: #f2f3f4;
+    width: 1440px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 50px 0px 50px 190px;
+}
+.metal-left, .rewards-left{
+    text-align: left;
+    gap: 30px;
+}
+
+@media (max-width: 768px) {
+    body{
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    section{
+        max-height: auto;
+    }
+
 }
